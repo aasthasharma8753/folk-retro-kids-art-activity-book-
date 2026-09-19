@@ -29,3 +29,52 @@ Do not launch all three tiers simultaneously. Recommended order:
 - Target retail price bands per tier, and whether Heirloom is positioned as a limited numbered edition (further defensibility + gifting justification).
 - Whether Tier 3 carries any of the roster's scent/deboss story in marketing copy even without the physical feature, to upsell toward Tier 1/2.
 - Direct-to-consumer vs. boutique/museum-shop wholesale margin structure, given Tier 1's higher COGS from certification and low-volume tooling.
+
+---
+
+## Tier 0 — TPT Teacher Edition (Digital, Classroom Channel)
+
+This is **not a fourth physical tier** — it's a parallel, digital-only product line sold through Teachers Pay Teachers (`docs/RESOURCES.md` §4), aimed at Pre-K/preschool/K classrooms rather than the diaspora-parent gifting buyer the three physical tiers target. Its job is lead generation and standalone revenue, not a stepping-stone SKU inside the Heirloom/Studio/Discovery ladder.
+
+### What's in it — and what's deliberately stripped out
+
+| Physical-tier feature | Teacher Edition treatment | Why |
+|---|---|---|
+| Kalighat brush art + folklore roster | **Kept**, at full fidelity | This is the entire differentiation vs. the generic "multicultural coloring pages" already saturating TPT — don't dilute it |
+| Topographic Channel deboss | **Cut** — flat print-and-go PDF | Teachers print/photocopy on standard paper; there is no debossing a home/school printer can produce |
+| Micro-encapsulated scent ink | **Cut** | Same reason as deboss — physically impossible in a printable product |
+| Magnetic shadow-box cover / Living Frame ritual | **Cut** | The ritual is a home, parent-child evening ritual (§5) — it doesn't map to a classroom setting or a PDF |
+| QR/NFC or streaming audio | **Cut — do not reintroduce** | v2's Kalighat Reframe deliberately killed the audio concept for the physical product (`ART_DIRECTION.md` §9) in favor of the fully analog scent-ink system. Bolting a "streaming audio link" onto only the classroom SKU reopens licensing/hosting scope for a low-price ancillary product and creates a brand inconsistency (physical line is analog-only, digital line suddenly isn't). Recommendation: **flat PDF only**, no audio component, unless a deliberate decision is made to bring audio back for both lines. |
+
+Net: the Teacher Edition is the **Discovery Edition's logic taken one step further** — same art system, same roster, zero physical innovation — but distributed as a printable rather than a bound object.
+
+### Product structure & pricing
+
+Follow TPT's own bundling norms (single low-cost packs + a discounted bundle) rather than a flat $9.99 single-product listing:
+
+| SKU | Contents | Suggested price band |
+|---|---|---|
+| Single-character pack | One character's tracing/coloring worksheet set (Ghatotkach *or* Betaal *or* Tenali Raman *or* Bal Hanuman) | $3–5 |
+| Full roster bundle | All four characters + bilingual Swar/Vyanjan tracing strips | $12–15 (priced as a ~25–30% bundle discount vs. buying singles, standard TPT bundling psychology) |
+| Free sampler | One partial worksheet (e.g., a single Ghatotkach panel, no calligraphy strip) | $0 — lead magnet to build a TPT follower base and an email list, funneling toward the bundle and, longer-term, toward the physical Discovery Edition |
+
+*(Price bands are a starting hypothesis for competitive-scan validation against comparable Pre-K fine-motor/multicultural-art listings on TPT — not a locked number.)*
+
+### Licensing terms
+
+Use TPT's own license categories rather than inventing bespoke language — align to whichever of TPT's standard tiers applies (single classroom, multi-classroom/grade-team discount, school-wide, or district) at listing time rather than a custom term like "unlimited seasonal reproduction," which doesn't map to how TPT's licensing system actually works.
+
+### Standards & discoverability tagging
+
+TPT search/discovery runs on tags and resource-type categories, not just a compelling title. Tag toward:
+- **Fine motor skills / pre-writing strokes** (the deboss-inspired heavy-line tracing logic still applies conceptually even without the physical channel)
+- **World cultures / global art appreciation** (not "multicultural coloring," which is the oversaturated, low-differentiation category)
+- **Pre-K / Preschool / Kindergarten** grade bands specifically, not a broad K-5 net
+
+### Funnel role vs. the physical tiers
+
+Teacher Edition → builds top-of-funnel awareness and an educator/parent email list → soft-upsells to the **Discovery Edition** (same art system, now physical) as the entry point into the gifting ladder → Discovery buyers who want the ritual trade up to Studio or Heirloom. Do not attempt to sell Studio/Heirloom directly through TPT — that buyer and that price point don't match the platform.
+
+### Open decision before building this line
+
+Confirm the folklore roster's IP clearance (`PRODUCT_ROADMAP.md` Phase 0) explicitly covers a for-profit classroom/education distribution channel, not just direct-to-consumer retail — TPT's own marketplace terms and any future institutional/district licensing may carry different exposure than a single-family gift purchase.
