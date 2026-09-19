@@ -1,9 +1,14 @@
 # The Folk-Retro Activity & Calligraphy Book
 
-A premium, bilingual activity book for toddlers (ages 2–5) that fuses **Mughal/South Asian folk art**, **psychedelic retro pop**, and **mid-century vintage animation** with iconic Indian cartoon characters — built for diaspora parents who want to teach heritage through high-end design.
+An ultra-premium, bilingual "living frame" ritual object for toddlers (ages 2–5): a Kalighat Pat folk-art accordion scroll book that folds into a magnetic tabletop shadow-box frame, built for diaspora parents who want to teach heritage through a physically transformable heirloom — not a coloring book.
 
-See [`docs/ART_DIRECTION.md`](docs/ART_DIRECTION.md) for the full creative bible: aesthetic pillars, character × world pairings, page anatomy, the bilingual calligraphy system, and premium production specs.
+## Docs
+
+- [`docs/ART_DIRECTION.md`](docs/ART_DIRECTION.md) — the creative bible: Kalighat Pat/Patachitra visual system, the folklore character roster, the accordion-scroll physical format, the deboss + scent-ink sensory system, and the "Post-Dinner Living Frame" ritual
+- [`docs/PRODUCT_ROADMAP.md`](docs/PRODUCT_ROADMAP.md) — gated build sequence (legal/safety clearance → material R&D → art production → prototype → commercial launch)
+- [`docs/MIDJOURNEY_PROMPTS.md`](docs/MIDJOURNEY_PROMPTS.md) — full Midjourney v6 concept-art prompt library per character
+- [`docs/COMMERCIAL_STRATEGY.md`](docs/COMMERCIAL_STRATEGY.md) — Heirloom / Studio / Discovery tier strategy and sequencing
 
 ## Project status
 
-Foundational art direction is locked. Next: build individual page designs, character model sheets, and Midjourney v6 prompt libraries per world (see the "Build queue" section of the art direction doc).
+v2 concept ("Kalighat Reframe") is locked, replacing the original Mughal/Pichwai/psychedelic mashup and licensed-character roster after a defensibility pressure-test. Next: Phase 0 legal and safety clearance per the roadmap (IP search on the folklore roster, scent-ink safety certification scoping, deboss paper vendor feasibility) before any tooling or final art spend.
