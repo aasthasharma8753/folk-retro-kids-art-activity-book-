@@ -1,0 +1,258 @@
+/* ============================================================
+   PAGES.CSS — page shell, screen preview workspace, grid system,
+   chapter openers and the 10 page templates (A–J).
+   ============================================================ */
+
+/* ---------- SCREEN PREVIEW WORKSPACE ---------- */
+body {
+  background: #B9B4A9;
+}
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xl);
+  padding: var(--space-2xl) var(--space-md);
+}
+
+/* ---------- THE PAGE ---------- */
+.page {
+  position: relative;
+  width: var(--page-width);
+  height: var(--page-height);
+  background: var(--color-bg-page);
+  box-shadow: var(--shadow-page);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.page-inner {
+  position: absolute;
+  inset: var(--page-margin);
+  z-index: var(--z-content);
+  display: flex;
+  flex-direction: column;
+}
+.page[data-bg="paper"] { background: var(--warm-paper); }
+.page[data-bg="white"] { background: var(--white); }
+
+/* 12-column grid utility, available inside any .page-inner */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--col-gap);
+}
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-12 { grid-column: span 12; }
+
+.stack { display: flex; flex-direction: column; }
+.gap-xs { gap: var(--space-xs); } .gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); } .gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+
+/* ---------- PAGE HEADER (chapter tag + title, used on most inside pages) --- */
+.page-kicker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+.page-kicker .badge-tag { border-color: var(--chapter-color, var(--charcoal)); color: var(--chapter-color, var(--charcoal)); }
+.page-headline {
+  font-size: var(--fs-headline);
+  color: var(--chapter-color, var(--charcoal));
+  margin-bottom: var(--space-md);
+}
+.page-body { flex: 1; display: flex; flex-direction: column; gap: var(--space-md); min-height: 0; }
+
+/* ---------- DECORATIVE PAGE BORDER (used on special / front-back matter) --- */
+.deco-border { position: absolute; inset: 0.28in; border: 3px solid var(--charcoal); border-radius: var(--radius-lg); pointer-events: none; z-index: var(--z-chrome); }
+.deco-border.dotted { border-style: dashed; }
+
+/* ============================================================
+   COVER PAGE
+   ============================================================ */
+.cover-page {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--warm-paper) 100%);
+}
+.cover-page .page-inner { inset: 0.4in; align-items: center; justify-content: space-between; text-align: center; }
+.cover-arch {
+  flex: 1;
+  width: 100%;
+  border: 6px solid var(--charcoal);
+  border-radius: 340px 340px var(--radius-lg) var(--radius-lg);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: var(--space-lg);
+}
+.cover-scene { position: relative; width: 100%; flex: 1; }
+.cover-title-block { margin-top: var(--space-md); }
+.cover-title {
+  font-size: var(--fs-cover-title);
+  color: var(--terracotta);
+  -webkit-text-stroke: 1.5px var(--charcoal);
+}
+.cover-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14pt;
+  color: var(--indigo);
+  margin-top: var(--space-sm);
+  max-width: 5.6in;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cover-footer {
+  margin-top: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12pt;
+  color: var(--charcoal);
+}
+.cover-footer .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--charcoal); }
+
+/* ============================================================
+   CHAPTER OPENER (Template J)
+   ============================================================ */
+.chapter-opener {
+  background: var(--chapter-color, var(--charcoal));
+  color: var(--white);
+}
+.chapter-opener .page-inner { justify-content: center; align-items: flex-start; gap: var(--space-lg); }
+.chapter-opener .chapter-number { background: var(--white); color: var(--chapter-color); border-color: var(--white); }
+.chapter-opener .chapter-eyebrow { color: var(--white); opacity: 0.85; }
+.chapter-opener h1 { color: var(--white); font-size: 40pt; max-width: 7in; }
+.chapter-opener .chapter-invite { font-family: var(--font-serif); font-style: italic; font-size: 16pt; max-width: 5.6in; }
+.chapter-opener .chapter-icon-badge {
+  width: 76px; height: 76px; border-radius: 50%;
+  background: var(--white); color: var(--chapter-color);
+  display: flex; align-items: center; justify-content: center;
+  border: 3px solid var(--white);
+}
+.chapter-opener .chapter-icon-badge .motif { width: 40px; height: 40px; }
+.chapter-opener .chapter-scene { position: relative; width: 100%; height: 3.4in; margin-top: var(--space-md); }
+.chapter-opener .illustration-placeholder { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.55); }
+.chapter-opener .illustration-placeholder span { color: var(--white); }
+
+/* ============================================================
+   TEMPLATE A — hero illustration + short lesson
+   ============================================================ */
+.tpl-hero .hero-art { height: 3.1in; margin-bottom: var(--space-md); }
+.tpl-hero .lesson-columns { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
+
+/* ============================================================
+   TEMPLATE B — 50/50 split illustration & activity
+   ============================================================ */
+.tpl-split .page-body { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: stretch; }
+.tpl-split .split-art { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+/* ============================================================
+   TEMPLATE C — full-page colouring / activity
+   ============================================================ */
+.tpl-full .full-activity-frame {
+  flex: 1;
+  border: 2.5px solid var(--charcoal);
+  border-radius: var(--radius-md);
+  background: var(--white);
+}
+
+/* ============================================================
+   TEMPLATE D — map-based activity
+   ============================================================ */
+.tpl-map .page-body { display: flex; flex-direction: column; gap: var(--space-md); }
+
+/* ============================================================
+   TEMPLATE E — recipe
+   ============================================================ */
+.tpl-recipe .page-body { display: block; }
+
+/* ============================================================
+   TEMPLATE F — timeline
+   ============================================================ */
+.tpl-timeline .page-body { display: flex; flex-direction: column; gap: var(--space-lg); }
+
+/* ============================================================
+   TEMPLATE G — scavenger hunt
+   ============================================================ */
+.tpl-hunt .hunt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+.hunt-item {
+  border: 2px solid var(--charcoal);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  text-align: center;
+  background: var(--white);
+}
+.hunt-item .box { width: 20px; height: 20px; border: 2px solid var(--charcoal); border-radius: 4px; align-self: flex-end; }
+
+/* ============================================================
+   TEMPLATE H — reflection journal
+   ============================================================ */
+.tpl-journal .page-body { display: flex; flex-direction: column; gap: var(--space-lg); }
+
+/* ============================================================
+   TEMPLATE I — creative design challenge
+   ============================================================ */
+.tpl-design .design-fields { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md); }
+.design-field { display: flex; flex-direction: column; gap: 4px; }
+.design-field .field-label { font-family: var(--font-body); font-weight: 800; font-size: var(--fs-tiny); text-transform: uppercase; color: var(--soft-brown); }
+.design-field .line { border-bottom: 1.5px dotted var(--soft-brown); height: 18px; }
+
+/* ============================================================
+   TABLE OF CONTENTS
+   ============================================================ */
+.toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+.toc-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  border: 2px solid var(--charcoal);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--white);
+}
+.toc-card .chapter-number { width: 46px; height: 46px; font-size: 15pt; flex-shrink: 0; }
+.toc-card .toc-text { flex: 1; }
+.toc-card .toc-title { font-family: var(--font-display); font-weight: 800; font-size: 12.5pt; text-transform: uppercase; }
+.toc-card .toc-page { font-family: var(--font-display); font-weight: 800; font-size: 13pt; color: var(--soft-brown); }
+
+/* ============================================================
+   CERTIFICATE
+   ============================================================ */
+.certificate .page-inner { align-items: center; text-align: center; justify-content: space-between; }
+.certificate-seal { width: 120px; }
+
+/* ============================================================
+   INSIDE COVER / PASSPORT
+   ============================================================ */
+.passport-stamp {
+  width: 84px; height: 84px;
+  border: 2.5px dashed var(--peacock-blue);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  transform: rotate(-8deg);
+  color: var(--peacock-blue);
+}
+
+/* ---------- RESPONSIVE: fit page to mobile width without changing internal proportions --- */
+@media (max-width: 900px) {
+  .page { transform: scale(var(--fit-scale, 1)); transform-origin: top center; }
+  .book { padding: var(--space-lg) 0; gap: var(--space-lg); }
+}

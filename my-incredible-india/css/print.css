@@ -1,0 +1,42 @@
+/* ============================================================
+   PRINT.CSS — rules that make the HTML export cleanly to PDF
+   ============================================================ */
+
+@page {
+  size: letter portrait;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    background: var(--white) !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .screen-toolbar { display: none !important; }
+
+  .book {
+    padding: 0;
+    gap: 0;
+    display: block;
+  }
+
+  .page {
+    box-shadow: none;
+    width: var(--page-width);
+    height: var(--page-height);
+    break-after: page;
+    break-inside: avoid;
+    overflow: hidden;
+  }
+  .page:last-child { break-after: auto; }
+
+  .card, .fact-card, .did-you-know, .activity-card, .recipe-card,
+  .explorer-question, .reflection-card, .timeline-item, .hunt-item,
+  .toc-card, .vocabulary-card {
+    break-inside: avoid;
+  }
+
+  a[href]::after { content: ''; }
+}

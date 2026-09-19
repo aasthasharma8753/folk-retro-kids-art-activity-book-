@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- ============================================================
+       SHARED SVG SPRITE — every recurring motif, activity icon,
+       badge glyph and mascot in the book lives here as a <symbol>,
+       so the same line-weight and style repeats everywhere via
+       <svg class="motif"><use href="#motif-xxx"/></svg>.
+       Style: thick clean outlines, simple folk-art-inspired shapes.
+       ============================================================ -->
+
+  <!-- ---------- RECURRING MOTIFS (viewBox 0 0 100 100) ---------- -->
+
+  <symbol id="motif-lotus" viewBox="0 0 100 100">
+    <path d="M50 90c-18 0-30-14-30-30 8 6 18 9 30 9s22-3 30-9c0 16-12 30-30 30Z" stroke="currentColor" stroke-width="5" fill="none" stroke-linejoin="round"/>
+    <path d="M50 62c0-16-8-28-8-40 4 4 8 10 8 16 0-6 4-12 8-16 0 12-8 24-8 40Z" fill="currentColor"/>
+    <path d="M22 55c-6-10-6-22 0-30 4 6 6 16 6 26M78 55c6-10 6-22 0-30-4 6-6 16-6 26" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="motif-sun" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="20" fill="currentColor"/>
+    <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+      <path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20 70 30M30 70 20 80"/>
+    </g>
+  </symbol>
+
+  <symbol id="motif-peacock-feather" viewBox="0 0 100 100">
+    <path d="M50 96V38" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <path d="M50 10c16 8 24 22 24 34 0 12-10 20-24 22-14-2-24-10-24-22 0-12 8-26 24-34Z" stroke="currentColor" stroke-width="5" fill="none"/>
+    <circle cx="50" cy="30" r="9" fill="currentColor"/>
+    <circle cx="50" cy="30" r="4" fill="var(--cream, #FFF8E8)"/>
+  </symbol>
+
+  <symbol id="motif-paisley" viewBox="0 0 100 100">
+    <path d="M62 20c14 4 22 18 18 32-3 11-14 18-14 28 0 6 4 9 9 10-16 4-30-6-30-20 0-10 8-16 8-26 0-9-6-15-15-16 8-9 16-11 24-8Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="motif-arch" viewBox="0 0 100 100">
+    <path d="M18 90V50c0-18 14-32 32-32s32 14 32 32v40" stroke="currentColor" stroke-width="6" fill="none"/>
+    <path d="M30 90V54c0-11 9-20 20-20s20 9 20 20v36" stroke="currentColor" stroke-width="4" fill="none"/>
+  </symbol>
+
+  <symbol id="motif-leaf" viewBox="0 0 100 100">
+    <path d="M20 80C20 40 50 15 85 15 85 55 55 80 20 80Z" fill="currentColor"/>
+    <path d="M25 78C40 60 55 40 82 18" stroke="var(--cream,#FFF8E8)" stroke-width="4" fill="none"/>
+  </symbol>
+
+  <symbol id="motif-star" viewBox="0 0 100 100">
+    <path d="M50 8l10 26 28 2-22 18 8 28-24-16-24 16 8-28-22-18 28-2Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="motif-cloud" viewBox="0 0 100 100">
+    <path d="M25 68a16 16 0 0 1-2-32 22 22 0 0 1 42-9 18 18 0 0 1 10 34 4 4 0 0 1-1 7H27a4 4 0 0 1-2 0Z" stroke="currentColor" stroke-width="5" fill="none" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="motif-mountain" viewBox="0 0 100 100">
+    <path d="M5 80 32 34l14 16 12-24 37 54Z" fill="currentColor"/>
+    <path d="M32 34l7 9-9 12-8-6Z" fill="var(--cream,#FFF8E8)"/>
+  </symbol>
+
+  <symbol id="motif-wave" viewBox="0 0 100 100">
+    <path d="M4 40c8-8 16-8 24 0s16 8 24 0 16-8 24 0 16 8 24 0M4 60c8-8 16-8 24 0s16 8 24 0 16-8 24 0 16 8 24 0" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="motif-flower" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <circle cx="50" cy="26" r="14"/><circle cx="50" cy="74" r="14"/>
+      <circle cx="26" cy="50" r="14"/><circle cx="74" cy="50" r="14"/>
+    </g>
+    <circle cx="50" cy="50" r="14" fill="var(--turmeric,#E6B936)" stroke="currentColor" stroke-width="3"/>
+  </symbol>
+
+  <symbol id="motif-elephant" viewBox="0 0 100 100">
+    <path d="M20 60c0-20 14-34 34-34 18 0 30 12 32 26 2 1 6 4 6 9 0 6-6 8-10 8v13c0 4-3 7-7 7s-7-3-7-7v-6H40v6c0 4-3 7-7 7s-7-3-7-7V72c-4 0-6-6-6-12Z" fill="currentColor"/>
+    <path d="M20 60c-6 4-10 12-8 22" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="66" cy="42" r="4" fill="var(--cream,#FFF8E8)"/>
+  </symbol>
+
+  <symbol id="motif-tiger" viewBox="0 0 100 100">
+    <ellipse cx="50" cy="58" rx="34" ry="24" fill="currentColor"/>
+    <circle cx="30" cy="34" r="14" fill="currentColor"/>
+    <circle cx="70" cy="34" r="14" fill="currentColor"/>
+    <circle cx="30" cy="34" r="6" fill="var(--cream,#FFF8E8)"/>
+    <circle cx="70" cy="34" r="6" fill="var(--cream,#FFF8E8)"/>
+    <g stroke="var(--cream,#FFF8E8)" stroke-width="3">
+      <path d="M28 54v14M40 50v20M50 48v24M60 50v20M72 54v14"/>
+    </g>
+  </symbol>
+
+  <symbol id="motif-bird" viewBox="0 0 100 100">
+    <path d="M30 55c0-16 12-30 30-30 12 0 20 6 24 12-4 0-8 2-10 5 6 2 10 7 10 13-6-4-12-4-16-1 2 12-4 24-18 28-16 4-30-6-30-18 0-4 2-8 4-9-2-2-4-4-4-8Z" fill="currentColor"/>
+    <circle cx="66" cy="34" r="3" fill="var(--cream,#FFF8E8)"/>
+    <path d="M76 36l10-2-8 6Z" fill="var(--terracotta,#C96245)"/>
+  </symbol>
+
+  <symbol id="motif-dot" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="30" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="motif-rangoli" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <circle cx="50" cy="50" r="10"/>
+      <circle cx="50" cy="18" r="8"/><circle cx="50" cy="82" r="8"/>
+      <circle cx="18" cy="50" r="8"/><circle cx="82" cy="50" r="8"/>
+      <circle cx="27" cy="27" r="7"/><circle cx="73" cy="27" r="7"/>
+      <circle cx="27" cy="73" r="7"/><circle cx="73" cy="73" r="7"/>
+    </g>
+  </symbol>
+
+  <!-- ---------- ACTIVITY / "HOW TO USE" ICONS ---------- -->
+
+  <symbol id="icon-look" viewBox="0 0 100 100">
+    <circle cx="42" cy="42" r="26" stroke="currentColor" stroke-width="7" fill="none"/>
+    <circle cx="42" cy="42" r="8" fill="currentColor"/>
+    <path d="M62 62 88 88" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-read" viewBox="0 0 100 100">
+    <path d="M12 22c12-6 26-6 38 4v52c-12-10-26-10-38-4Z" fill="currentColor"/>
+    <path d="M88 22c-12-6-26-6-38 4v52c12-10 26-10 38-4Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-draw" viewBox="0 0 100 100">
+    <path d="M20 80 26 58l40-40 16 16-40 40Z" fill="currentColor"/>
+    <path d="M60 24l16 16" stroke="var(--cream,#FFF8E8)" stroke-width="5"/>
+    <path d="M18 88l8-24 16 16Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-write" viewBox="0 0 100 100">
+    <rect x="16" y="16" width="68" height="68" rx="8" stroke="currentColor" stroke-width="7" fill="none"/>
+    <path d="M28 40h44M28 54h44M28 68h28" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-cook" viewBox="0 0 100 100">
+    <path d="M18 52a32 32 0 0 1 64 0Z" fill="currentColor"/>
+    <rect x="14" y="52" width="72" height="10" rx="5" fill="currentColor"/>
+    <path d="M40 20c-4 6 4 8 0 14M60 20c-4 6 4 8 0 14" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-watch" viewBox="0 0 100 100">
+    <rect x="10" y="26" width="80" height="52" rx="10" stroke="currentColor" stroke-width="7" fill="none"/>
+    <path d="M42 42l20 12-20 12Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-explore" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="7" fill="none"/>
+    <path d="M64 36 44 44l-8 20 20-8Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-ask" viewBox="0 0 100 100">
+    <path d="M50 10a30 30 0 0 1 12 58c-2 4-2 8-2 12h-20c0-8 2-14 8-18a18 18 0 1 0-18-18H16A34 34 0 0 1 50 10Z" fill="currentColor"/>
+    <circle cx="48" cy="88" r="6" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-listen" viewBox="0 0 100 100">
+    <path d="M50 14a26 26 0 0 0-26 26v20a10 10 0 0 0 10 10h6V50h-8v-10a18 18 0 0 1 36 0v10h-8v20h6a10 10 0 0 0 10-10V40A26 26 0 0 0 50 14Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-visit" viewBox="0 0 100 100">
+    <path d="M50 10c16 0 28 12 28 28 0 22-28 52-28 52S22 60 22 38c0-16 12-28 28-28Z" fill="currentColor"/>
+    <circle cx="50" cy="38" r="10" fill="var(--cream,#FFF8E8)"/>
+  </symbol>
+  <symbol id="icon-adult-help" viewBox="0 0 100 100">
+    <circle cx="34" cy="26" r="12" fill="currentColor"/>
+    <circle cx="70" cy="34" r="9" fill="currentColor"/>
+    <path d="M14 84c0-18 10-30 20-30s20 12 20 30" fill="currentColor"/>
+    <path d="M52 84c2-14 10-24 20-24s18 10 18 24" fill="currentColor"/>
+  </symbol>
+
+  <!-- ---------- BADGE GLYPHS (used inside .reward-sticker) ---------- -->
+  <symbol id="badge-culture-detective" viewBox="0 0 100 100"><circle cx="42" cy="42" r="24" stroke="currentColor" stroke-width="8" fill="none"/><path d="M60 60 84 84" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></symbol>
+  <symbol id="badge-little-historian" viewBox="0 0 100 100"><path d="M20 30h60v46a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6Z" fill="currentColor"/><path d="M20 30 50 14l30 16" stroke="currentColor" stroke-width="8" fill="none" stroke-linejoin="round"/></symbol>
+  <symbol id="badge-junior-chef" viewBox="0 0 100 100"><path d="M28 46c-10 0-16-14-6-20 2-10 12-16 22-12 4-8 16-8 20 0 10-4 20 2 22 12 10 6 4 20-6 20Z" fill="currentColor"/><rect x="26" y="46" width="48" height="34" rx="4" fill="currentColor"/></symbol>
+  <symbol id="badge-nature-explorer" viewBox="0 0 100 100"><path d="M50 12 78 74H22Z" fill="currentColor"/><path d="M50 40 66 74H34Z" fill="var(--cream,#FFF8E8)"/></symbol>
+  <symbol id="badge-map-master" viewBox="0 0 100 100"><path d="M20 26 40 18 60 26 80 18v56L60 82 40 74 20 82Z" fill="currentColor"/><circle cx="52" cy="46" r="6" fill="var(--cream,#FFF8E8)"/></symbol>
+  <symbol id="badge-festival-explorer" viewBox="0 0 100 100"><path d="M50 14c8 10 6 18 0 24-6-6-8-14 0-24Z" fill="currentColor"/><path d="M30 88V52c0-12 8-20 20-20s20 8 20 20v36Z" fill="currentColor"/></symbol>
+  <symbol id="badge-storyteller" viewBox="0 0 100 100"><path d="M14 24c14-8 30-8 36 4v52c-6-10-22-10-36-4Z" fill="currentColor"/><path d="M86 24c-14-8-30-8-36 4v52c6-10 22-10 36-4Z" fill="currentColor"/></symbol>
+  <symbol id="badge-mini-architect" viewBox="0 0 100 100"><path d="M20 84V44c0-16 12-28 30-28s30 12 30 28v40" stroke="currentColor" stroke-width="8" fill="none"/><rect x="42" y="60" width="16" height="24" fill="currentColor"/></symbol>
+  <symbol id="badge-young-artist" viewBox="0 0 100 100"><path d="M50 12c22 0 36 14 36 30 0 10-8 14-16 12-6-2-12 2-12 10 0 10-8 18-18 14C22 74 14 60 14 46 14 26 30 12 50 12Z" fill="currentColor"/><circle cx="36" cy="38" r="5" fill="var(--cream,#FFF8E8)"/><circle cx="56" cy="30" r="5" fill="var(--cream,#FFF8E8)"/></symbol>
+  <symbol id="badge-curious-traveller" viewBox="0 0 100 100"><rect x="24" y="34" width="52" height="46" rx="8" fill="currentColor"/><path d="M38 34v-6a12 12 0 0 1 24 0v6" stroke="currentColor" stroke-width="8" fill="none"/></symbol>
+
+  <!-- ---------- MASCOTS ---------- -->
+
+  <symbol id="mascot-girl" viewBox="0 0 200 260">
+    <ellipse cx="100" cy="248" rx="46" ry="8" fill="rgba(45,41,38,0.12)"/>
+    <path d="M62 140c-6 30-6 60 2 90h72c8-30 8-60 2-90Z" fill="var(--peacock-blue,#267B8C)"/>
+    <path d="M70 150c14 6 46 6 60 0" stroke="var(--cream,#FFF8E8)" stroke-width="4" fill="none"/>
+    <circle cx="100" cy="88" r="42" fill="#7A4A32"/>
+    <path d="M58 84c-4-30 18-50 42-50s46 20 42 50c-10-8-14-20-14-20s-6 14-20 16c-16 2-26-4-32-12 0 0-4 12-18 16Z" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="86" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="114" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <path d="M88 108c6 6 18 6 24 0" stroke="var(--charcoal,#2D2926)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M40 150c-14 6-20 26-16 46l16-4c-2-16 0-30 8-38Z" fill="#7A4A32"/>
+    <path d="M160 150c14 6 20 26 16 46l-16-4c2-16 0-30-8-38Z" fill="#7A4A32"/>
+    <rect x="128" y="150" width="36" height="46" rx="10" fill="var(--terracotta,#C96245)"/>
+    <path d="M128 160h36" stroke="var(--cream,#FFF8E8)" stroke-width="3"/>
+    <path d="M70 230c-4 10-4 16 0 22h16c2-8 2-14 0-22ZM114 230c-4 10-4 16 0 22h16c2-8 2-14 0-22Z" fill="var(--indigo,#283A6A)"/>
+  </symbol>
+
+  <symbol id="mascot-boy" viewBox="0 0 200 260">
+    <ellipse cx="100" cy="248" rx="46" ry="8" fill="rgba(45,41,38,0.12)"/>
+    <path d="M64 140c-8 30-8 60 0 90h72c8-30 8-60 0-90Z" fill="var(--terracotta,#C96245)"/>
+    <circle cx="100" cy="88" r="42" fill="#8A5A3C"/>
+    <path d="M58 78c0-26 20-42 42-42s42 16 42 42c0 4 0 8-2 12-4-14-14-22-14-22s-4 10-16 12c-14 2-24-2-30-10 0 0-2 10-14 14-4-2-8-4-8-6Z" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="86" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="114" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <path d="M88 108c6 6 18 6 24 0" stroke="var(--charcoal,#2D2926)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M40 150c-14 8-18 28-12 46l16-6c-4-14-4-28 4-36Z" fill="#8A5A3C"/>
+    <path d="M160 150c14 8 18 28 12 46l-16-6c4-14 4-28-4-36Z" fill="#8A5A3C"/>
+    <rect x="150" y="158" width="30" height="22" rx="4" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="165" cy="169" r="8" fill="var(--peacock-blue,#267B8C)"/>
+    <path d="M72 230c-4 10-4 16 0 22h16c2-8 2-14 0-22ZM112 230c-4 10-4 16 0 22h16c2-8 2-14 0-22Z" fill="var(--deep-green,#3F6348)"/>
+  </symbol>
+
+  <symbol id="mascot-parakeet" viewBox="0 0 100 100">
+    <use href="#motif-bird"/>
+  </symbol>
+</svg>

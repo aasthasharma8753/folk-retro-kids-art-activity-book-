@@ -1,0 +1,102 @@
+/* ============================================================
+   TYPOGRAPHY.CSS — fonts, type scale, editorial text rules
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Baloo+2:wght@500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700;800&family=Kalam:wght@400;700&display=swap');
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: var(--lh-heading);
+  color: var(--color-text-body);
+  letter-spacing: -0.01em;
+}
+
+.cover-title,
+h1.chapter-title {
+  font-size: var(--fs-chapter-title);
+  text-transform: uppercase;
+}
+
+.headline, h2.headline {
+  font-size: var(--fs-headline);
+}
+
+.subheading, h3.subheading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-subheading);
+  text-transform: none;
+}
+
+p, li {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  max-width: 62ch;
+}
+
+.text-block p + p { margin-top: var(--space-sm); }
+
+.instructions {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-instructions);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  color: var(--color-text-muted);
+}
+
+.tiny-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.story-text {
+  font-family: var(--font-serif);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.story-text.quote {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hand-note {
+  font-family: var(--font-hand);
+  font-size: 13.5pt;
+  line-height: 1.35;
+  color: var(--indigo);
+}
+
+/* Body copy is left aligned by default; only large display text may centre */
+p { text-align: left; }
+.center-text { text-align: center; }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: var(--fs-tiny);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+.no-orphans { text-wrap: pretty; }

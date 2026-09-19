@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Incredible India — A Cultural Adventure Activity Book</title>
+<meta name="description" content="An illustrated cultural-adventure activity ebook for children ages 6–10, exploring India through stories, food, art, nature, history and imagination.">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+
+<!-- ============================================================
+     SVG SYMBOL LIBRARY
+     Inlined here (source of truth also kept at assets/icons/sprite.svg)
+     so <use href="#id"> resolves reliably when the file is opened
+     directly from disk or printed to PDF. Do not duplicate ids.
+     ============================================================ -->
+<svg style="display:none" aria-hidden="true">
+
+  <symbol id="motif-lotus" viewBox="0 0 100 100">
+    <path d="M50 90c-18 0-30-14-30-30 8 6 18 9 30 9s22-3 30-9c0 16-12 30-30 30Z" stroke="currentColor" stroke-width="5" fill="none" stroke-linejoin="round"/>
+    <path d="M50 62c0-16-8-28-8-40 4 4 8 10 8 16 0-6 4-12 8-16 0 12-8 24-8 40Z" fill="currentColor"/>
+    <path d="M22 55c-6-10-6-22 0-30 4 6 6 16 6 26M78 55c6-10 6-22 0-30-4 6-6 16-6 26" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="motif-sun" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="20" fill="currentColor"/>
+    <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+      <path d="M50 8v14M50 78v14M8 50h14M78 50h14M20 20l10 10M70 70l10 10M80 20 70 30M30 70 20 80"/>
+    </g>
+  </symbol>
+
+  <symbol id="motif-peacock-feather" viewBox="0 0 100 100">
+    <path d="M50 96V38" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <path d="M50 10c16 8 24 22 24 34 0 12-10 20-24 22-14-2-24-10-24-22 0-12 8-26 24-34Z" stroke="currentColor" stroke-width="5" fill="none"/>
+    <circle cx="50" cy="30" r="9" fill="currentColor"/>
+    <circle cx="50" cy="30" r="4" fill="var(--cream, #FFF8E8)"/>
+  </symbol>
+
+  <symbol id="motif-paisley" viewBox="0 0 100 100">
+    <path d="M62 20c14 4 22 18 18 32-3 11-14 18-14 28 0 6 4 9 9 10-16 4-30-6-30-20 0-10 8-16 8-26 0-9-6-15-15-16 8-9 16-11 24-8Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="motif-arch" viewBox="0 0 100 100">
+    <path d="M18 90V50c0-18 14-32 32-32s32 14 32 32v40" stroke="currentColor" stroke-width="6" fill="none"/>
+    <path d="M30 90V54c0-11 9-20 20-20s20 9 20 20v36" stroke="currentColor" stroke-width="4" fill="none"/>
+  </symbol>
+
+  <symbol id="motif-leaf" viewBox="0 0 100 100">
+    <path d="M20 80C20 40 50 15 85 15 85 55 55 80 20 80Z" fill="currentColor"/>
+    <path d="M25 78C40 60 55 40 82 18" stroke="var(--cream,#FFF8E8)" stroke-width="4" fill="none"/>
+  </symbol>
+
+  <symbol id="motif-star" viewBox="0 0 100 100">
+    <path d="M50 8l10 26 28 2-22 18 8 28-24-16-24 16 8-28-22-18 28-2Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="motif-cloud" viewBox="0 0 100 100">
+    <path d="M25 68a16 16 0 0 1-2-32 22 22 0 0 1 42-9 18 18 0 0 1 10 34 4 4 0 0 1-1 7H27a4 4 0 0 1-2 0Z" stroke="currentColor" stroke-width="5" fill="none" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="motif-mountain" viewBox="0 0 100 100">
+    <path d="M5 80 32 34l14 16 12-24 37 54Z" fill="currentColor"/>
+    <path d="M32 34l7 9-9 12-8-6Z" fill="var(--cream,#FFF8E8)"/>
+  </symbol>
+
+  <symbol id="motif-wave" viewBox="0 0 100 100">
+    <path d="M4 40c8-8 16-8 24 0s16 8 24 0 16-8 24 0 16 8 24 0M4 60c8-8 16-8 24 0s16 8 24 0 16-8 24 0 16 8 24 0" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="motif-flower" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <circle cx="50" cy="26" r="14"/><circle cx="50" cy="74" r="14"/>
+      <circle cx="26" cy="50" r="14"/><circle cx="74" cy="50" r="14"/>
+    </g>
+    <circle cx="50" cy="50" r="14" fill="var(--turmeric,#E6B936)" stroke="currentColor" stroke-width="3"/>
+  </symbol>
+
+  <symbol id="motif-elephant" viewBox="0 0 100 100">
+    <path d="M20 60c0-20 14-34 34-34 18 0 30 12 32 26 2 1 6 4 6 9 0 6-6 8-10 8v13c0 4-3 7-7 7s-7-3-7-7v-6H40v6c0 4-3 7-7 7s-7-3-7-7V72c-4 0-6-6-6-12Z" fill="currentColor"/>
+    <path d="M20 60c-6 4-10 12-8 22" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="66" cy="42" r="4" fill="var(--cream,#FFF8E8)"/>
+  </symbol>
+
+  <symbol id="motif-tiger" viewBox="0 0 100 100">
+    <ellipse cx="50" cy="58" rx="34" ry="24" fill="currentColor"/>
+    <circle cx="30" cy="34" r="14" fill="currentColor"/>
+    <circle cx="70" cy="34" r="14" fill="currentColor"/>
+    <circle cx="30" cy="34" r="6" fill="var(--cream,#FFF8E8)"/>
+    <circle cx="70" cy="34" r="6" fill="var(--cream,#FFF8E8)"/>
+    <g stroke="var(--cream,#FFF8E8)" stroke-width="3">
+      <path d="M28 54v14M40 50v20M50 48v24M60 50v20M72 54v14"/>
+    </g>
+  </symbol>
+
+  <symbol id="motif-bird" viewBox="0 0 100 100">
+    <path d="M30 55c0-16 12-30 30-30 12 0 20 6 24 12-4 0-8 2-10 5 6 2 10 7 10 13-6-4-12-4-16-1 2 12-4 24-18 28-16 4-30-6-30-18 0-4 2-8 4-9-2-2-4-4-4-8Z" fill="currentColor"/>
+    <circle cx="66" cy="34" r="3" fill="var(--cream,#FFF8E8)"/>
+    <path d="M76 36l10-2-8 6Z" fill="var(--terracotta,#C96245)"/>
+  </symbol>
+
+  <symbol id="motif-dot" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="30" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="motif-rangoli" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <circle cx="50" cy="50" r="10"/>
+      <circle cx="50" cy="18" r="8"/><circle cx="50" cy="82" r="8"/>
+      <circle cx="18" cy="50" r="8"/><circle cx="82" cy="50" r="8"/>
+      <circle cx="27" cy="27" r="7"/><circle cx="73" cy="27" r="7"/>
+      <circle cx="27" cy="73" r="7"/><circle cx="73" cy="73" r="7"/>
+    </g>
+  </symbol>
+
+  <symbol id="icon-look" viewBox="0 0 100 100">
+    <circle cx="42" cy="42" r="26" stroke="currentColor" stroke-width="7" fill="none"/>
+    <circle cx="42" cy="42" r="8" fill="currentColor"/>
+    <path d="M62 62 88 88" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-read" viewBox="0 0 100 100">
+    <path d="M12 22c12-6 26-6 38 4v52c-12-10-26-10-38-4Z" fill="currentColor"/>
+    <path d="M88 22c-12-6-26-6-38 4v52c12-10 26-10 38-4Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-draw" viewBox="0 0 100 100">
+    <path d="M20 80 26 58l40-40 16 16-40 40Z" fill="currentColor"/>
+    <path d="M60 24l16 16" stroke="var(--cream,#FFF8E8)" stroke-width="5"/>
+    <path d="M18 88l8-24 16 16Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-write" viewBox="0 0 100 100">
+    <rect x="16" y="16" width="68" height="68" rx="8" stroke="currentColor" stroke-width="7" fill="none"/>
+    <path d="M28 40h44M28 54h44M28 68h28" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-cook" viewBox="0 0 100 100">
+    <path d="M18 52a32 32 0 0 1 64 0Z" fill="currentColor"/>
+    <rect x="14" y="52" width="72" height="10" rx="5" fill="currentColor"/>
+    <path d="M40 20c-4 6 4 8 0 14M60 20c-4 6 4 8 0 14" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-watch" viewBox="0 0 100 100">
+    <rect x="10" y="26" width="80" height="52" rx="10" stroke="currentColor" stroke-width="7" fill="none"/>
+    <path d="M42 42l20 12-20 12Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-explore" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="7" fill="none"/>
+    <path d="M64 36 44 44l-8 20 20-8Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-ask" viewBox="0 0 100 100">
+    <path d="M50 10a30 30 0 0 1 12 58c-2 4-2 8-2 12h-20c0-8 2-14 8-18a18 18 0 1 0-18-18H16A34 34 0 0 1 50 10Z" fill="currentColor"/>
+    <circle cx="48" cy="88" r="6" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-listen" viewBox="0 0 100 100">
+    <path d="M50 14a26 26 0 0 0-26 26v20a10 10 0 0 0 10 10h6V50h-8v-10a18 18 0 0 1 36 0v10h-8v20h6a10 10 0 0 0 10-10V40A26 26 0 0 0 50 14Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-visit" viewBox="0 0 100 100">
+    <path d="M50 10c16 0 28 12 28 28 0 22-28 52-28 52S22 60 22 38c0-16 12-28 28-28Z" fill="currentColor"/>
+    <circle cx="50" cy="38" r="10" fill="var(--cream,#FFF8E8)"/>
+  </symbol>
+  <symbol id="icon-adult-help" viewBox="0 0 100 100">
+    <circle cx="34" cy="26" r="12" fill="currentColor"/>
+    <circle cx="70" cy="34" r="9" fill="currentColor"/>
+    <path d="M14 84c0-18 10-30 20-30s20 12 20 30" fill="currentColor"/>
+    <path d="M52 84c2-14 10-24 20-24s18 10 18 24" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="badge-culture-detective" viewBox="0 0 100 100"><circle cx="42" cy="42" r="24" stroke="currentColor" stroke-width="8" fill="none"/><path d="M60 60 84 84" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></symbol>
+  <symbol id="badge-little-historian" viewBox="0 0 100 100"><path d="M20 30h60v46a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6Z" fill="currentColor"/><path d="M20 30 50 14l30 16" stroke="currentColor" stroke-width="8" fill="none" stroke-linejoin="round"/></symbol>
+  <symbol id="badge-junior-chef" viewBox="0 0 100 100"><path d="M28 46c-10 0-16-14-6-20 2-10 12-16 22-12 4-8 16-8 20 0 10-4 20 2 22 12 10 6 4 20-6 20Z" fill="currentColor"/><rect x="26" y="46" width="48" height="34" rx="4" fill="currentColor"/></symbol>
+  <symbol id="badge-nature-explorer" viewBox="0 0 100 100"><path d="M50 12 78 74H22Z" fill="currentColor"/><path d="M50 40 66 74H34Z" fill="var(--cream,#FFF8E8)"/></symbol>
+  <symbol id="badge-map-master" viewBox="0 0 100 100"><path d="M20 26 40 18 60 26 80 18v56L60 82 40 74 20 82Z" fill="currentColor"/><circle cx="52" cy="46" r="6" fill="var(--cream,#FFF8E8)"/></symbol>
+  <symbol id="badge-festival-explorer" viewBox="0 0 100 100"><path d="M50 14c8 10 6 18 0 24-6-6-8-14 0-24Z" fill="currentColor"/><path d="M30 88V52c0-12 8-20 20-20s20 8 20 20v36Z" fill="currentColor"/></symbol>
+  <symbol id="badge-storyteller" viewBox="0 0 100 100"><path d="M14 24c14-8 30-8 36 4v52c-6-10-22-10-36-4Z" fill="currentColor"/><path d="M86 24c-14-8-30-8-36 4v52c6-10 22-10 36-4Z" fill="currentColor"/></symbol>
+  <symbol id="badge-mini-architect" viewBox="0 0 100 100"><path d="M20 84V44c0-16 12-28 30-28s30 12 30 28v40" stroke="currentColor" stroke-width="8" fill="none"/><rect x="42" y="60" width="16" height="24" fill="currentColor"/></symbol>
+  <symbol id="badge-young-artist" viewBox="0 0 100 100"><path d="M50 12c22 0 36 14 36 30 0 10-8 14-16 12-6-2-12 2-12 10 0 10-8 18-18 14C22 74 14 60 14 46 14 26 30 12 50 12Z" fill="currentColor"/><circle cx="36" cy="38" r="5" fill="var(--cream,#FFF8E8)"/><circle cx="56" cy="30" r="5" fill="var(--cream,#FFF8E8)"/></symbol>
+  <symbol id="badge-curious-traveller" viewBox="0 0 100 100"><rect x="24" y="34" width="52" height="46" rx="8" fill="currentColor"/><path d="M38 34v-6a12 12 0 0 1 24 0v6" stroke="currentColor" stroke-width="8" fill="none"/></symbol>
+
+  <symbol id="mascot-girl" viewBox="0 0 200 260">
+    <ellipse cx="100" cy="248" rx="46" ry="8" fill="rgba(45,41,38,0.12)"/>
+    <path d="M62 140c-6 30-6 60 2 90h72c8-30 8-60 2-90Z" fill="var(--peacock-blue,#267B8C)"/>
+    <path d="M70 150c14 6 46 6 60 0" stroke="var(--cream,#FFF8E8)" stroke-width="4" fill="none"/>
+    <circle cx="100" cy="88" r="42" fill="#7A4A32"/>
+    <path d="M58 84c-4-30 18-50 42-50s46 20 42 50c-10-8-14-20-14-20s-6 14-20 16c-16 2-26-4-32-12 0 0-4 12-18 16Z" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="86" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="114" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <path d="M88 108c6 6 18 6 24 0" stroke="var(--charcoal,#2D2926)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M40 150c-14 6-20 26-16 46l16-4c-2-16 0-30 8-38Z" fill="#7A4A32"/>
+    <path d="M160 150c14 6 20 26 16 46l-16-4c2-16 0-30-8-38Z" fill="#7A4A32"/>
+    <rect x="128" y="150" width="36" height="46" rx="10" fill="var(--terracotta,#C96245)"/>
+    <path d="M128 160h36" stroke="var(--cream,#FFF8E8)" stroke-width="3"/>
+    <path d="M70 230c-4 10-4 16 0 22h16c2-8 2-14 0-22ZM114 230c-4 10-4 16 0 22h16c2-8 2-14 0-22Z" fill="var(--indigo,#283A6A)"/>
+  </symbol>
+
+  <symbol id="mascot-boy" viewBox="0 0 200 260">
+    <ellipse cx="100" cy="248" rx="46" ry="8" fill="rgba(45,41,38,0.12)"/>
+    <path d="M64 140c-8 30-8 60 0 90h72c8-30 8-60 0-90Z" fill="var(--terracotta,#C96245)"/>
+    <circle cx="100" cy="88" r="42" fill="#8A5A3C"/>
+    <path d="M58 78c0-26 20-42 42-42s42 16 42 42c0 4 0 8-2 12-4-14-14-22-14-22s-4 10-16 12c-14 2-24-2-30-10 0 0-2 10-14 14-4-2-8-4-8-6Z" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="86" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="114" cy="92" r="5" fill="var(--charcoal,#2D2926)"/>
+    <path d="M88 108c6 6 18 6 24 0" stroke="var(--charcoal,#2D2926)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M40 150c-14 8-18 28-12 46l16-6c-4-14-4-28 4-36Z" fill="#8A5A3C"/>
+    <path d="M160 150c14 8 18 28 12 46l-16-6c4-14 4-28-4-36Z" fill="#8A5A3C"/>
+    <rect x="150" y="158" width="30" height="22" rx="4" fill="var(--charcoal,#2D2926)"/>
+    <circle cx="165" cy="169" r="8" fill="var(--peacock-blue,#267B8C)"/>
+    <path d="M72 230c-4 10-4 16 0 22h16c2-8 2-14 0-22ZM112 230c-4 10-4 16 0 22h16c2-8 2-14 0-22Z" fill="var(--deep-green,#3F6348)"/>
+  </symbol>
+
+  <symbol id="mascot-parakeet" viewBox="0 0 100 100">
+    <use href="#motif-bird"/>
+  </symbol>
+</svg>
+
+<div class="screen-toolbar" role="toolbar" aria-label="Screen preview controls">
+  <button type="button" data-action="print">Print / Save as PDF</button>
+</div>
+
+<main class="book">
+
+<!-- ============================================================
+     COVER
+     ============================================================ -->
+<section class="page cover-page" aria-label="Cover">
+  <div class="page-inner">
+    <div class="cover-arch">
+      <div class="cover-scene">
+        <svg class="motif" style="position:absolute;top:8%;left:8%;width:56px;height:56px;color:var(--saffron)"><use href="#motif-sun"/></svg>
+        <svg class="motif" style="position:absolute;top:6%;right:10%;width:64px;height:64px;color:var(--peacock-blue)"><use href="#motif-cloud"/></svg>
+        <div class="illustration-placeholder tall" style="position:absolute;inset:14% 6% 0 6%;border:none;background:none;">
+          <span>
+            <strong>COVER ILLUSTRATION —</strong><br>
+            SUBJECT: Snow-capped Himalayan peaks behind a domed palace silhouette, with a Bengal tiger, a peacock with fanned tail, and a decorated Indian elephant arranged left-to-right along the base; two child explorers (girl with backpack, boy with sketchbook) stand centre-front looking up; a small bowl of Indian food, a lotus flower, and a tiny illustrated map sit near their feet.<br>
+            COMPOSITION: Symmetrical banner layout inside the arch, generous negative space, nothing crosses the title zone below.<br>
+            STYLE: Modern Indian folk-illustration, thick clean outlines (2–3pt), flat textured colour blocks, Madhubani/Warli-inspired simplification.<br>
+            COLOUR: Cream base, terracotta, peacock blue, saffron, deep green, lotus pink accents.<br>
+            LIGHTING: Flat, even, poster-like — no heavy gradients.<br>
+            AGE-APPROPRIATENESS: Warm, welcoming, no frightening features.<br>
+            NEGATIVE: No photorealism, no Disney styling, no real people's likenesses, no text, no watermark, no religious caricature.
+          </span>
+        </div>
+        <svg class="motif" style="position:absolute;bottom:4%;left:6%;width:40px;height:40px;color:var(--lotus-pink)"><use href="#motif-lotus"/></svg>
+        <svg class="motif" style="position:absolute;bottom:4%;right:6%;width:40px;height:40px;color:var(--leaf-green)"><use href="#motif-leaf"/></svg>
+      </div>
+      <div class="cover-title-block">
+        <h1 class="cover-title">My Incredible India</h1>
+        <p class="cover-subtitle">A Cultural Adventure Through Stories, Food, Art, Nature, History &amp; Imagination</p>
+      </div>
+    </div>
+    <div class="cover-footer"><span>Activity Book</span><span class="dot"></span><span>Ages 6–10</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INSIDE COVER — THIS BOOK BELONGS TO
+     ============================================================ -->
+<section class="page" data-bg="paper" aria-label="This book belongs to">
+  <div class="deco-border dotted"></div>
+  <div class="page-inner center-text" style="align-items:center; justify-content:center; gap:var(--space-lg);">
+    <p class="eyebrow" style="color:var(--terracotta)">Passport to Adventure</p>
+    <h1 class="chapter-title" style="color:var(--indigo)">This Book Belongs To</h1>
+    <div class="write-lines large" style="width:70%;">
+      <div class="line"></div>
+    </div>
+    <div class="grid-12" style="width:100%;">
+      <div class="col-6 stack gap-xs" style="text-align:left;">
+        <span class="tiny-label">Age</span>
+        <div class="write-lines"><div class="line"></div></div>
+      </div>
+      <div class="col-6 stack gap-xs" style="text-align:left;">
+        <span class="tiny-label">City / Country</span>
+        <div class="write-lines"><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="stack gap-xs" style="width:100%; text-align:left;">
+      <span class="tiny-label">My favourite thing to discover is…</span>
+      <div class="write-lines"><div class="line"></div></div>
+    </div>
+    <div class="icon-row" style="justify-content:center; margin-top:var(--space-md);">
+      <div class="passport-stamp"><svg class="motif motif-lg"><use href="#motif-mountain"/></svg></div>
+      <div class="passport-stamp" style="border-color:var(--terracotta); color:var(--terracotta);"><svg class="motif motif-lg"><use href="#motif-elephant"/></svg></div>
+      <div class="passport-stamp" style="border-color:var(--lotus-pink); color:var(--lotus-pink);"><svg class="motif motif-lg"><use href="#motif-lotus"/></svg></div>
+      <div class="passport-stamp" style="border-color:var(--leaf-green); color:var(--leaf-green);"><svg class="motif motif-lg"><use href="#motif-sun"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW TO USE THIS BOOK — p.1
+     ============================================================ -->
+<section class="page" aria-label="How to use this book">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--terracotta); color:var(--terracotta);">Start Here</span></div>
+    <h1 class="page-headline" style="color:var(--terracotta);">How To Use This Book</h1>
+    <div class="page-body">
+      <p>This is not a book you only read — it's a book you <em>do</em>. Follow the path below every time you open a new page, and let your curiosity lead the way.</p>
+      <div class="icon-row" style="justify-content:space-between;">
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--terracotta)"><svg class="motif"><use href="#icon-read"/></svg></span><span>Read</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--peacock-blue)"><svg class="motif"><use href="#icon-look"/></svg></span><span>Look</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--terracotta)"><svg class="motif"><use href="#icon-draw"/></svg></span><span>Draw</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--saffron)"><svg class="motif"><use href="#icon-cook"/></svg></span><span>Cook</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--deep-green)"><svg class="motif"><use href="#icon-explore"/></svg></span><span>Explore</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--peacock-blue)"><svg class="motif"><use href="#icon-ask"/></svg></span><span>Ask</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--lotus-pink)"><svg class="motif"><use href="#icon-look"/></svg></span><span>Notice</span></div>
+        <div class="icon-chip"><span class="icon-circle" style="--icon-color:var(--terracotta)"><svg class="motif"><use href="#icon-write"/></svg></span><span>Create</span></div>
+      </div>
+      <div class="grid-12">
+        <div class="col-7 stack gap-sm">
+          <div class="fact-card">
+            <div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>What you'll find on every page</div>
+            <p>Fact boxes, curious questions, drawing space, and a hidden parakeet to spot. Some pages ask you to visit a shop, cook, or watch something with your family — those are marked with a grown-up icon.</p>
+          </div>
+          <div class="explorer-question">
+            <div class="card-title">Meet Your Guides</div>
+            <p>Two explorers — and one very nosy parakeet — will travel with you through every chapter. They ask questions, notice small details, and never have all the answers. Neither do you need to!</p>
+          </div>
+        </div>
+        <div class="col-5 stack gap-sm" style="align-items:center; justify-content:center;">
+          <div class="illustration-placeholder tall" style="width:100%;">
+            <span>ILLUSTRATION: The two explorer mascots and the parakeet standing together, waving, backpack open with a notebook, pencil and small map poking out.</span>
+          </div>
+        </div>
+      </div>
+      <div class="parent-note">
+        <svg class="motif motif-lg"><use href="#icon-adult-help"/></svg>
+        <p>Some activities involve visiting stores, restaurants, festivals, or cooking. A grown-up should help choose safe and appropriate activities.</p>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">1</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TABLE OF CONTENTS — p.2
+     ============================================================ -->
+<section class="page" data-bg="paper" aria-label="Table of contents">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag">Contents</span></div>
+    <h1 class="page-headline">Your Journey Ahead</h1>
+    <div class="page-body">
+      <div class="toc-grid">
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-01); border-color:var(--ch-01);">01</span><span class="toc-text"><span class="toc-title">Where in the World is India?</span></span><span class="toc-page">3</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-02); border-color:var(--ch-02);">02</span><span class="toc-text"><span class="toc-title">Wild India</span></span><span class="toc-page">7</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-03); border-color:var(--ch-03);">03</span><span class="toc-text"><span class="toc-title">The Grocery Store Challenge</span></span><span class="toc-page">11</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-04); border-color:var(--ch-04);">04</span><span class="toc-text"><span class="toc-title">Little Indian Chef</span></span><span class="toc-page">13</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-05); border-color:var(--ch-05);">05</span><span class="toc-text"><span class="toc-title">Indian Art Studio</span></span><span class="toc-page">16</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-06); border-color:var(--ch-06);">06</span><span class="toc-text"><span class="toc-title">Build Like an Architect</span></span><span class="toc-page">19</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-07); border-color:var(--ch-07);">07</span><span class="toc-text"><span class="toc-title">Dress Across India</span></span><span class="toc-page">22</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-08); border-color:var(--ch-08);">08</span><span class="toc-text"><span class="toc-title">Celebrations &amp; Family Traditions</span></span><span class="toc-page">25</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-09); border-color:var(--ch-09);">09</span><span class="toc-text"><span class="toc-title">Festival Calendar</span></span><span class="toc-page">28</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-10); border-color:var(--ch-10);">10</span><span class="toc-text"><span class="toc-title">Stories From India</span></span><span class="toc-page">31</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-11); border-color:var(--ch-11);">11</span><span class="toc-text"><span class="toc-title">Lights, Camera, India!</span></span><span class="toc-page">34</span></div>
+        <div class="toc-card"><span class="chapter-number" style="--chapter-color:var(--ch-12); border-color:var(--ch-12);">12</span><span class="toc-text"><span class="toc-title">People Who Changed the World</span></span><span class="toc-page">37</span></div>
+      </div>
+      <div class="rangoli-divider"><svg class="motif"><use href="#motif-rangoli"/></svg><svg class="motif"><use href="#motif-star"/></svg><svg class="motif"><use href="#motif-rangoli"/></svg></div>
+      <div class="grid-12">
+        <div class="col-6"><div class="fact-card"><div class="card-title">Explorer Checklist</div><p>Page 41</p></div></div>
+        <div class="col-6"><div class="fact-card"><div class="card-title">My Culture Journal &amp; Certificate</div><p>Pages 42–43</p></div></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">2</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 01 — WHERE IN THE WORLD IS INDIA?  (Template J opener)
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-01);" aria-label="Chapter 1 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">01</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-mountain"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter One · Geography</span>
+      </div>
+      <h1>Where in the World is India?</h1>
+      <p class="chapter-invite">"Grab your passport — let's find India on the map."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A simplified world-map style illustration showing the Asian continent with India highlighted, the Himalayas as a jagged line along the north, and gentle wave patterns for the Arabian Sea, Bay of Bengal and Indian Ocean. Two explorer mascots stand on a compass rose in the corner holding a folded paper map. STYLE: Flat folk-art cartography, thick outlines, no political borders drawn with false certainty. COLOUR: Warm cream, deep green landmass, peacock-blue water. NEGATIVE: no realistic satellite texture, no text labels, no disputed-border shading.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">3</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch1 · p.4 — Geography intro (Template A) ---------- -->
+<section class="page tpl-hero" aria-label="Chapter 1 geography introduction">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-01); color:var(--ch-01);">Chapter 01</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Easy</span></span></div>
+    <h1 class="page-headline" style="--chapter-color:var(--ch-01); color:var(--ch-01);">A Country of Mountains, Deserts &amp; Coastlines</h1>
+    <div class="page-body">
+      <div class="illustration-placeholder hero-art">
+        <span>SUBJECT: Cross-section style landscape strip showing, left to right: snow-capped Himalayas, green forests, the sandy Thar Desert, golden grassland, and a coastline with fishing boats. SETTING: India's varied geography in one continuous illustrated ribbon. STYLE: Flat folk-art landscape, thick outlines, simplified shapes. COLOUR: Indigo mountains, deep green forest, turmeric desert, peacock-blue coast. NEGATIVE: no text, no photorealism.</span>
+      </div>
+      <div class="lesson-columns">
+        <div class="stack gap-sm">
+          <p>India is a country in the continent of <strong>Asia</strong>. It sits on its own peninsula, with the <strong>Arabian Sea</strong> to the west, the <strong>Bay of Bengal</strong> to the east, and the <strong>Indian Ocean</strong> to the south.</p>
+          <p>To the north, the <strong>Himalayas</strong> — the tallest mountains on Earth — separate India from its neighbours. India shares borders with several countries, including Pakistan, China, Nepal, Bhutan, Bangladesh and Myanmar.</p>
+        </div>
+        <div class="stack gap-sm">
+          <div class="did-you-know">
+            <div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>Did You Know?</div>
+            <p>The Thar Desert in the west and the rainy Sundarbans mangrove forest in the east are both part of India — two totally different worlds in one country!</p>
+          </div>
+          <div class="vocabulary-card">
+            <span class="word">Subcontinent</span>
+            <p class="say">A very large landmass that is part of a continent but separated by mountains or sea. India is part of the South Asian subcontinent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">4</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch1 · p.5 — Map activity (Template D) ---------- -->
+<section class="page tpl-map" aria-label="Can you find India map activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-01); color:var(--ch-01);">Chapter 01</span></div>
+    <h1 class="page-headline" style="color:var(--ch-01);">Can You Find India?</h1>
+    <div class="page-body">
+      <div class="instructions">Look at the simplified map below. Draw a line from the star that shows where <em>you</em> live to India, then answer the Curious Mind questions.</div>
+      <div class="map-card">
+        <div class="map-frame">
+          <span class="illustration-placeholder" style="border:none; background:none;">SUBJECT: Simplified, child-friendly world map (not to scale, no political border disputes shown) with continents as soft rounded shapes, oceans labelled with gentle wave motifs, and India clearly marked with a small flag icon. Leave one blank star icon near the equator/edge for the child to relabel as "me". STYLE: Flat folk-art cartography. COLOUR: Cream ocean, deep-green and terracotta landmasses. NEGATIVE: no fine national borders, no disputed territory lines, no text.</span>
+        </div>
+      </div>
+      <div class="grid-12">
+        <div class="col-7">
+          <div class="explorer-question">
+            <div class="card-title">Curious Mind</div>
+            <ul>
+              <li>Which ocean is closest to India?</li>
+              <li>Is India north or south of where you live?</li>
+              <li>Name one country that shares a border with India.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="fact-card">
+            <div class="card-title">Rivers of Life</div>
+            <p>The Ganges, Brahmaputra and Indus rivers begin high in the Himalayas and flow across India, giving water to farms, cities and forests along the way.</p>
+          </div>
+        </div>
+      </div>
+      <div class="affirmation"><svg class="motif motif-lg"><use href="#motif-star"/></svg>Your imagination travelled today.</div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">5</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch1 · p.6 — Explorer passport activity (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Create your explorer passport">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-01); color:var(--ch-01);">Chapter 01</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Medium</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-01);">Create Your Explorer Passport</h1>
+    <div class="page-body">
+      <p class="instructions">Every great explorer needs a passport. Fill in yours below, then draw your own portrait in the photo box.</p>
+      <div class="grid-12" style="align-items:flex-start;">
+        <div class="col-4">
+          <div class="draw-box" style="min-height:200px;"><span class="draw-label">My portrait</span></div>
+        </div>
+        <div class="col-8 design-fields" style="margin-bottom:0;">
+          <div class="design-field"><span class="field-label">Explorer Name</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Home Country</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Explorer Motto</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Special Skill</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">First Stop: India</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Travel Companion</span><div class="line"></div></div>
+        </div>
+      </div>
+      <div class="parent-note"><svg class="motif motif-lg"><use href="#icon-visit"/></svg><p>Keep this passport handy — you'll collect a badge stamp every time you finish a chapter!</p></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">6</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 02 — WILD INDIA
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-02);" aria-label="Chapter 2 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">02</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-tiger"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Two · Nature</span>
+      </div>
+      <h1>Wild India</h1>
+      <p class="chapter-invite">"Shhh. Listen closely — the forest is full of surprises."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A Bengal tiger resting among tall grass, a peacock with fanned tail nearby, and a one-horned rhinoceros in the background near water. SETTING: Simplified grassland/forest edge. STYLE: Folk-art flat illustration, thick outlines, patterned fur textures inspired by Warli dot-work. COLOUR: Deep green, terracotta, turmeric. NEGATIVE: no frightening teeth, no photorealism, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">7</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch2 · p.8 — Meet the Wildlife + matching (Template B) ---------- -->
+<section class="page tpl-split" aria-label="Meet India's wildlife">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-02); color:var(--ch-02);">Chapter 02</span></div>
+    <h1 class="page-headline" style="color:var(--ch-02);">Meet the Wildlife</h1>
+    <div class="page-body">
+      <div class="split-art">
+        <div class="illustration-placeholder" style="flex:1;"><span>SUBJECT: A grid-style illustrated panel of eight animals — Bengal tiger, Indian elephant, peacock, one-horned rhinoceros, snow leopard, lion-tailed macaque, king cobra, Indian giant squirrel — each in its own simplified circular frame. STYLE: Folk-art, thick outlines, consistent flat colour per animal. NEGATIVE: no realism, no menacing expressions.</span></div>
+        <div class="did-you-know">
+          <div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>Did You Know?</div>
+          <p>The lion-tailed macaque is one of the rarest monkeys in the world and lives only in the rainforests of the Western Ghats.</p>
+        </div>
+      </div>
+      <div class="stack gap-sm">
+        <div class="fact-card"><div class="card-title">Snow Leopard</div><p>Lives high in the Himalayas. Its thick fur and wide paws help it move across snow.</p></div>
+        <div class="fact-card"><div class="card-title">King Cobra</div><p>The world's longest venomous snake. It is shy and avoids people whenever it can.</p></div>
+        <div class="fact-card"><div class="card-title">Indian Giant Squirrel</div><p>A colourful, cat-sized squirrel that leaps between treetops in forest canopies.</p></div>
+        <div class="explorer-question"><div class="card-title">Curious Mind</div><ul><li>Which animal would you most like to see in real life?</li><li>What do you notice about their colours and patterns?</li></ul></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">8</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch2 · p.9 — Habitat matching game (Template G) ---------- -->
+<section class="page tpl-hunt" aria-label="Match the animal to its habitat">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-02); color:var(--ch-02);">Chapter 02</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Medium</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-02);">Match the Animal to its Home</h1>
+    <div class="page-body">
+      <p class="instructions">Draw a line connecting each animal to the habitat where it lives.</p>
+      <div class="matching-grid">
+        <div class="match-item">Snow Leopard</div>
+        <div class="match-dots"><span class="dot"></span></div>
+        <div class="match-item">Himalayas</div>
+        <div class="match-item">Bengal Tiger</div>
+        <div class="match-dots"><span class="dot"></span></div>
+        <div class="match-item">Sundarbans Mangroves</div>
+        <div class="match-item">Lion-Tailed Macaque</div>
+        <div class="match-dots"><span class="dot"></span></div>
+        <div class="match-item">Western Ghats Rainforest</div>
+        <div class="match-item">One-Horned Rhinoceros</div>
+        <div class="match-dots"><span class="dot"></span></div>
+        <div class="match-item">Grasslands &amp; Wetlands</div>
+        <div class="match-item">Indian Elephant</div>
+        <div class="match-dots"><span class="dot"></span></div>
+        <div class="match-item">Forests</div>
+      </div>
+      <div class="culture-note">
+        <div class="card-title">Habitat Notice</div>
+        <p>Many of these habitats are protected in national parks, but animals still need our help. Cutting down forests or polluting rivers can make it harder for wildlife to survive.</p>
+      </div>
+      <div class="affirmation" style="margin-top:auto;"><svg class="motif motif-lg"><use href="#motif-leaf"/></svg>You noticed something new.</div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">9</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch2 · p.10 — Colouring page + documentary reflection (Template C) ---------- -->
+<section class="page tpl-full" aria-label="Colour the tiger and reflect on a nature documentary">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-02); color:var(--ch-02);">Chapter 02</span></div>
+    <h1 class="page-headline" style="color:var(--ch-02);">Colour It In: Tiger on the Prowl</h1>
+    <div class="page-body" style="flex:1;">
+      <div class="full-activity-frame illustration-placeholder" style="min-height:0;">
+        <span>SUBJECT: A large line-art outline (no colour fill) of a Bengal tiger walking through tall grass, ready for a child to colour. STYLE: Bold, simple, thick black outlines only, big shapes, few small details, print-friendly line art.</span>
+      </div>
+      <div class="reflection-card" style="margin-top:var(--space-md);">
+        <div class="card-title">Watch &amp; Wonder</div>
+        <p class="instructions">Watch an age-appropriate nature documentary about Indian wildlife with a grown-up, then finish this sentence:</p>
+        <div class="write-lines"><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">10</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 03 — THE INDIAN GROCERY STORE CHALLENGE
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-03);" aria-label="Chapter 3 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">03</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-leaf"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Three · Senses</span>
+      </div>
+      <h1>The Grocery Store Challenge</h1>
+      <p class="chapter-invite">"Follow your nose — this aisle is full of clues."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A cheerful illustrated grocery aisle with labelled bins of rice, lentils, spices in glass jars, mangoes, and a shelf of colourful snack packages; the two child mascots peer into a basket together. STYLE: Flat folk-art shop-front illustration, thick outlines, bold pattern on packaging. COLOUR: Saffron, terracotta, cream, leaf green. NEGATIVE: no real brand logos, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">11</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch3 · p.12 — Scavenger hunt + sensory detectives (Template G) ---------- -->
+<section class="page tpl-hunt" aria-label="Grocery store scavenger hunt">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-03); color:var(--ch-03);">Chapter 03</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Easy</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-03);">Grocery Store Scavenger Hunt</h1>
+    <div class="page-body">
+      <p class="instructions">Visit a store that sells Indian groceries with a grown-up. Check off each item you find in your basket.</p>
+      <div class="hunt-grid">
+        <div class="hunt-item"><span class="tiny-label">Rice</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Lentils</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Chickpeas</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Turmeric</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Cardamom</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Mango</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Coconut</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Paneer</span><span class="box"></span></div>
+        <div class="hunt-item"><span class="tiny-label">Jaggery</span><span class="box"></span></div>
+      </div>
+      <div class="grid-12">
+        <div class="col-4"><div class="fact-card"><div class="card-title">Smell Detective</div><p>Which spice smells the strongest? Can you describe the smell without naming the spice?</p></div></div>
+        <div class="col-4"><div class="fact-card"><div class="card-title">Colour Detective</div><p>Which package has the most interesting design or the boldest colours?</p></div></div>
+        <div class="col-4"><div class="fact-card"><div class="card-title">Texture Detective</div><p>Find something smooth, something bumpy, and something powdery.</p></div></div>
+      </div>
+      <div class="explorer-question"><div class="card-title">Curious Mind</div><ul><li>Which food have you never tried before?</li><li>What would you like to taste first?</li></ul></div>
+      <div class="parent-note"><svg class="motif motif-lg"><use href="#icon-adult-help"/></svg><p>Ask a shopkeeper or grown-up what their favourite ingredient is and why!</p></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">12</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 04 — LITTLE INDIAN CHEF
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-04);" aria-label="Chapter 4 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">04</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#icon-cook"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Four · Food</span>
+      </div>
+      <h1>Little Indian Chef</h1>
+      <p class="chapter-invite">"Follow your nose into a world of flavours."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A warm kitchen scene with a large steaming pan, a child mascot stirring with a wooden spoon (adult standing nearby), small bowls of rice, lentils and vegetables arranged around. STYLE: Flat folk-art illustration, thick outlines. COLOUR: Terracotta, saffron, cream, deep green. NEGATIVE: no open flame drawn close to the child, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">13</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch4 · p.14 — Food diversity intro + recipe (Template E) ---------- -->
+<section class="page tpl-recipe" aria-label="Little Indian chef recipe page">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-04); color:var(--ch-04);">Chapter 04</span></div>
+    <h1 class="page-headline" style="color:var(--ch-04);">Many Kitchens, Many Flavours</h1>
+    <div class="page-body">
+      <p>There is no single "Indian food." Different regions cook very differently — rice and coconut are common in the south, wheat breads and dairy in the north, fish and mustard oil near the coasts, and every family has its own favourite way of making a dish.</p>
+      <div class="recipe-card">
+        <div class="recipe-header">
+          <div><h3>Simple Vegetable Poha</h3><p class="caption">A quick flattened-rice breakfast from Maharashtra, in western India</p></div>
+          <div class="recipe-meta"><span class="meta-chip">Serves 4</span><span class="meta-chip">15 minutes</span><span class="meta-chip">Stovetop</span></div>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-ingredients">
+            <div class="card-title">Ingredients</div>
+            <ul>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>2 cups flattened rice (poha)</li>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>1 small onion, chopped</li>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>2 tbsp peanuts</li>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>½ tsp mustard seeds</li>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>¼ tsp turmeric</li>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>A few curry leaves (optional)</li>
+              <li><span class="ing-icon"><svg class="motif" style="width:16px;height:16px;"><use href="#motif-dot"/></svg></span>Squeeze of lemon &amp; salt</li>
+            </ul>
+          </div>
+          <div class="recipe-steps-wrap">
+            <div class="card-title">Steps</div>
+            <ol class="recipe-steps">
+              <li>Rinse the flattened rice gently in a bowl of water, then drain. Let it soften.</li>
+              <li>A grown-up heats a little oil, adds mustard seeds and peanuts until they pop and toast.</li>
+              <li>Add chopped onion and curry leaves; cook until soft.</li>
+              <li>Stir in turmeric, then add the softened rice and salt. Mix gently.</li>
+              <li>Cook for two minutes, then squeeze fresh lemon on top before serving.</li>
+            </ol>
+            <span class="adult-help"><svg class="motif" style="width:16px;height:16px;"><use href="#icon-adult-help"/></svg>Ask a grown-up to help with the stove</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">14</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch4 · p.15 — Sweet India + design your dream dessert (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Sweet India dessert design activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-04); color:var(--ch-04);">Chapter 04</span></div>
+    <h1 class="page-headline" style="color:var(--ch-04);">Sweet India</h1>
+    <div class="page-body">
+      <div class="grid-12">
+        <div class="col-7 stack gap-sm">
+          <p>Sweets play a big part in celebrations across India. A few favourites: soft round <strong>ladoo</strong>, creamy rice pudding called <strong>kheer</strong>, syrup-soaked <strong>jalebi</strong> spirals, milky <strong>barfi</strong> squares, spongy <strong>rasgulla</strong>, and frozen <strong>kulfi</strong> on a stick.</p>
+          <div class="did-you-know"><div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>Did You Know?</div><p>Kulfi is sometimes called India's original ice cream — it was made long before electric freezers, using clay pots packed in ice and salt.</p></div>
+        </div>
+        <div class="col-5">
+          <div class="illustration-placeholder" style="height:100%;"><span>SUBJECT: A decorative platter of five distinct sweets — ladoo, jalebi, barfi, rasgulla, kulfi on a stick — arranged like a sampler. STYLE: Flat folk-art food illustration, thick outlines. COLOUR: Turmeric, terracotta, cream.</span></div>
+        </div>
+      </div>
+      <div class="create-it-title"><svg class="motif motif-lg"><use href="#icon-draw"/></svg>Design Your Dream Dessert</div>
+      <div class="design-fields">
+        <div class="design-field"><span class="field-label">Name</span><div class="line"></div></div>
+        <div class="design-field"><span class="field-label">Shape</span><div class="line"></div></div>
+        <div class="design-field"><span class="field-label">Flavour</span><div class="line"></div></div>
+        <div class="design-field"><span class="field-label">Colour</span><div class="line"></div></div>
+        <div class="design-field" style="grid-column:1/-1;"><span class="field-label">Special Ingredient</span><div class="line"></div></div>
+      </div>
+      <div class="draw-box" style="flex:1;"><span class="draw-label">Draw it here</span></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">15</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 05 — INDIAN ART STUDIO
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-05);" aria-label="Chapter 5 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">05</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-flower"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Five · Art</span>
+      </div>
+      <h1>Indian Art Studio</h1>
+      <p class="chapter-invite">"Every dot, line and colour tells a story."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: An artist's table with painting tools, a half-finished rangoli pattern on the floor, and wall art inspired broadly by Madhubani line-work and Warli dot-figures in the background. STYLE: Flat folk-art, thick outlines, bold pattern. COLOUR: Terracotta, lotus pink, turmeric, cream. NEGATIVE: no direct copy of specific traditional artworks, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">16</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch5 · p.17 — Art traditions intro + rangoli/border activity (Template B) ---------- -->
+<section class="page tpl-split" aria-label="Indian art traditions and rangoli activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-05); color:var(--ch-05);">Chapter 05</span></div>
+    <h1 class="page-headline" style="color:var(--ch-05);">Patterns With a Story</h1>
+    <div class="page-body">
+      <div class="split-art stack gap-sm">
+        <div class="culture-note"><div class="card-title">Madhubani</div><p>A painting style from the Mithila region using fine lines and natural dyes, traditionally made by women on walls and floors.</p></div>
+        <div class="culture-note"><div class="card-title">Warli</div><p>Geometric white paintings on mud walls by the Warli community of Maharashtra, using simple circles, triangles and lines for people.</p></div>
+        <div class="culture-note"><div class="card-title">Gond &amp; Pattachitra</div><p>Gond art (Madhya Pradesh) uses dots and fine patterns; Pattachitra (Odisha &amp; West Bengal) is detailed scroll painting that tells stories.</p></div>
+      </div>
+      <div class="stack gap-sm">
+        <div class="create-it-title"><svg class="motif motif-lg"><use href="#motif-rangoli"/></svg>Finish the Rangoli</div>
+        <div class="illustration-placeholder" style="flex:1;"><span>SUBJECT: A symmetrical rangoli floor-pattern that is half-complete, with a clear dot-grid guide, ready for the child to mirror and finish the other half. STYLE: Bold outline geometric pattern, print-friendly line art.</span></div>
+        <div class="draw-box" style="min-height:110px;"><span class="draw-label">Complete this border pattern</span></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">17</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch5 · p.18 — Folk animal, Warli scene & pattern detective (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Create a folk animal and Warli storytelling scene">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-05); color:var(--ch-05);">Chapter 05</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><span class="label">Challenge</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-05);">Create Your Own Folk Art</h1>
+    <div class="page-body">
+      <div class="grid-12">
+        <div class="col-6 stack gap-sm">
+          <div class="create-it-title"><svg class="motif motif-lg"><use href="#motif-elephant"/></svg>Gond-Style Animal</div>
+          <p class="instructions">Fill this animal outline with dots, lines and small patterns instead of solid colour, the way Gond artists do.</p>
+          <div class="illustration-placeholder" style="flex:1;"><span>SUBJECT: A simple elephant outline with empty interior space, ready to be filled with dot and line patterns. STYLE: Bold single-weight line art.</span></div>
+        </div>
+        <div class="col-6 stack gap-sm">
+          <div class="create-it-title"><svg class="motif motif-lg"><use href="#icon-draw"/></svg>Warli Story Scene</div>
+          <p class="instructions">Using only circles, triangles and lines (no faces!), draw a Warli-style scene of your family doing something together.</p>
+          <div class="draw-box" style="flex:1;"></div>
+        </div>
+      </div>
+      <div class="explorer-question"><div class="card-title">Pattern Detective</div><ul><li>Look back through this chapter — can you find a pattern that repeats three times?</li><li>Where else in this book have you seen dots used as decoration?</li></ul></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">18</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 06 — BUILD LIKE AN INDIAN ARCHITECT
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-06);" aria-label="Chapter 6 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">06</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-arch"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Six · Architecture</span>
+      </div>
+      <h1>Build Like an Architect</h1>
+      <p class="chapter-invite">"Look up — every arch and dome has a reason for its shape."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A skyline montage of a domed marble monument, a stepped stone stepwell, a fort with battlements, and a carved jaali (lattice) window in the foreground. STYLE: Flat folk-art architectural illustration, thick outlines, symmetrical composition. COLOUR: Cream, indigo, soft brown. NEGATIVE: no specific real monument rendered as a literal copyrighted photograph, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">19</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch6 · p.20 — Architecture intro + design-a-building (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Design your own building activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-06); color:var(--ch-06);">Chapter 06</span></div>
+    <h1 class="page-headline" style="color:var(--ch-06);">Arches, Domes &amp; Jaali</h1>
+    <div class="page-body">
+      <p>Builders across India have used clever shapes for centuries: tall <strong>domes</strong> that stay cool, curved <strong>arches</strong> that spread weight evenly, carved <strong>jaali</strong> screens that let in breeze and light without direct sun, and deep <strong>stepwells</strong> that reach down to water. You can find these ideas in temples, mosques, forts, palaces and stupas alike.</p>
+      <div class="grid-12">
+        <div class="col-4"><div class="fact-card"><div class="card-title">Trace an Arch</div><div class="illustration-placeholder" style="min-height:120px;"><span>Dotted arch outline for tracing.</span></div></div></div>
+        <div class="col-4"><div class="fact-card"><div class="card-title">Symmetry Challenge</div><div class="illustration-placeholder" style="min-height:120px;"><span>Half of a symmetrical dome pattern for the child to mirror and complete.</span></div></div></div>
+        <div class="col-4"><div class="fact-card"><div class="card-title">Window Pattern</div><div class="illustration-placeholder" style="min-height:120px;"><span>Empty jaali grid for the child to fill with their own repeating cut-out pattern.</span></div></div></div>
+      </div>
+      <div class="create-it-title"><svg class="motif motif-lg"><use href="#icon-draw"/></svg>Design Your Own Building</div>
+      <div class="design-fields">
+        <div class="design-field"><span class="field-label">Building Name</span><div class="line"></div></div>
+        <div class="design-field"><span class="field-label">What is it for?</span><div class="line"></div></div>
+      </div>
+      <div class="draw-box" style="flex:1;"><span class="draw-label">Draw your building — give it an arch, a dome, or a jaali window</span></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">20</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch6 · p.21 — Palace garden maze (Template C) ---------- -->
+<section class="page tpl-full" aria-label="Palace garden maze">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-06); color:var(--ch-06);">Chapter 06</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Medium</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-06);">Mini Maze Through a Palace Garden</h1>
+    <div class="page-body" style="flex:1;">
+      <p class="instructions">Help the explorers find their way from the garden gate to the fountain in the centre of the courtyard.</p>
+      <div class="full-activity-frame illustration-placeholder" style="min-height:0;">
+        <span>SUBJECT: A symmetrical top-down maze designed as a formal palace courtyard garden, with hedge-line walls, a start gate labelled "start" and a fountain at the centre labelled "finish". STYLE: Clean bold line-art maze, symmetrical, solvable, print-friendly.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">21</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 07 — DRESS ACROSS INDIA
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-07);" aria-label="Chapter 7 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">07</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-paisley"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Seven · Textiles</span>
+      </div>
+      <h1>Dress Across India</h1>
+      <p class="chapter-invite">"So many threads, so many stories woven in."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A washing line strung with different garments — a sari, a kurta, a lehenga, a dhoti, block-printed fabric, and a plain modern t-shirt — fluttering side by side. STYLE: Flat folk-art illustration, bold fabric patterns, thick outlines. COLOUR: Lotus pink, indigo, saffron, cream. NEGATIVE: no faces shown (fabric only), no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">22</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch7 · p.23 — Clothing intro + design a festival outfit (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Design a festival outfit">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-07); color:var(--ch-07);">Chapter 07</span></div>
+    <h1 class="page-headline" style="color:var(--ch-07);">Threads With Meaning</h1>
+    <div class="page-body">
+      <p>People in India wear many different styles of clothing, including contemporary global clothing like jeans and t-shirts. On special occasions, some families choose traditional garments such as a draped <strong>sari</strong>, a <strong>kurta</strong> with loose trousers, a flowing <strong>lehenga</strong>, a wrapped <strong>dhoti</strong>, or an embroidered <strong>sherwani</strong> — the choice depends on region, family, and personal taste, not a single rule for everyone.</p>
+      <div class="did-you-know"><div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>Did You Know?</div><p>Handloom weaving and block printing are traditional textile crafts passed down through generations of skilled artisans in many regions of India.</p></div>
+      <div class="create-it-title"><svg class="motif motif-lg"><use href="#icon-draw"/></svg>Design a Festival Outfit</div>
+      <div class="grid-12">
+        <div class="col-5 design-fields" style="grid-template-columns:1fr;">
+          <div class="design-field"><span class="field-label">Occasion</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Favourite Colour</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Pattern or Print</span><div class="line"></div></div>
+        </div>
+        <div class="col-7"><div class="draw-box" style="height:100%;"><span class="draw-label">Draw your outfit design</span></div></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">23</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch7 · p.24 — Textile pattern repeat activity (Template C) ---------- -->
+<section class="page tpl-full" aria-label="Textile pattern repeat activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-07); color:var(--ch-07);">Chapter 07</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Medium</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-07);">Create a Repeating Print</h1>
+    <div class="page-body" style="flex:1;">
+      <p class="instructions">Block printing repeats one small carved design again and again to fill a whole cloth. Finish this row, then design your own pattern in the empty grid below.</p>
+      <div class="full-activity-frame illustration-placeholder" style="min-height:140px;"><span>SUBJECT: A row of a simple floral block-print motif repeating five times, with the last two spots left blank for the child to complete by hand.</span></div>
+      <div class="full-activity-frame illustration-placeholder" style="flex:1; margin-top:var(--space-md);"><span>SUBJECT: A blank grid of 12 empty squares for the child to design and repeat their own print motif.</span></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">24</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 08 — CELEBRATIONS & FAMILY TRADITIONS
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-08);" aria-label="Chapter 8 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">08</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-flower"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Eight · Family</span>
+      </div>
+      <h1>Celebrations &amp; Family Traditions</h1>
+      <p class="chapter-invite">"Every family has its own way of coming together."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A warm illustrated gathering of a multi-generational family sitting together, sharing food, with flowers, string lights and music notes floating gently around them. STYLE: Flat folk-art illustration, thick outlines, cosy composition. COLOUR: Warm saffron, terracotta, cream. NEGATIVE: no specific religious ritual depicted literally, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">25</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch8 · p.26 — My Family Celebration (Template H) ---------- -->
+<section class="page tpl-journal" aria-label="My family celebration reflection">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-08); color:var(--ch-08);">Chapter 08</span></div>
+    <h1 class="page-headline" style="color:var(--ch-08);">My Family Celebration</h1>
+    <div class="page-body">
+      <p>Celebrations look different from family to family — they can depend on religion, region, language, or simply what a family enjoys doing together. Some involve music and dancing, some involve mehndi patterns on hands, some involve a special food only made once a year.</p>
+      <div class="reflection-card">
+        <div class="card-title">Tell Us About Your Family</div>
+        <div class="grid-12">
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What does your family celebrate?</span><div class="write-lines"><div class="line"></div><div class="line"></div></div></div>
+          <div class="col-6 stack gap-xs"><span class="tiny-label">Who usually comes?</span><div class="write-lines"><div class="line"></div><div class="line"></div></div></div>
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What food do you eat?</span><div class="write-lines"><div class="line"></div><div class="line"></div></div></div>
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What sounds do you hear?</span><div class="write-lines"><div class="line"></div><div class="line"></div></div></div>
+        </div>
+      </div>
+      <div class="affirmation"><svg class="motif motif-lg"><use href="#motif-star"/></svg>Your family's traditions are worth celebrating.</div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">26</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch8 · p.27 — How Families Remember (Template H) ---------- -->
+<section class="page tpl-journal" aria-label="How families remember">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-08); color:var(--ch-08);">Chapter 08</span></div>
+    <h1 class="page-headline" style="color:var(--ch-08);">How Families Remember</h1>
+    <div class="page-body">
+      <p>Families everywhere have gentle ways of celebrating big moments — a new baby, a wedding, a birthday — and of remembering people or times that mattered to them. Across India, these customs vary widely by community, faith, and region: some light a lamp, some plant a tree, some tell stories, some visit a special place together.</p>
+      <div class="culture-note"><div class="card-title">A Gentle Note</div><p>There is no single right way to remember someone or something important. What matters most is doing it together, in a way that feels meaningful to your family.</p></div>
+      <div class="reflection-card">
+        <div class="card-title">A Question to Sit With</div>
+        <p class="instructions">What is something your family does to remember people or important moments?</p>
+        <div class="write-lines large"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+      </div>
+      <div class="parent-note"><svg class="motif motif-lg"><use href="#icon-ask"/></svg><p>This is a gentle conversation to have together — there's no need to rush an answer.</p></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">27</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 09 — FESTIVAL CALENDAR
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-09);" aria-label="Chapter 9 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">09</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-star"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Nine · Festivals</span>
+      </div>
+      <h1>Festival Calendar</h1>
+      <p class="chapter-invite">"Lights, colours, and celebrations all year round."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A collage of festive elements — small oil lamps, a burst of coloured powder, string lights, a decorated pandal frame, a spring kite — arranged like a joyful scrapbook page. STYLE: Flat folk-art illustration, thick outlines. COLOUR: Saffron, turmeric, lotus pink, peacock blue. NEGATIVE: no specific religious icon shown disrespectfully, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">28</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch9 · p.29 — Festival calendar wheel (Template D) ---------- -->
+<section class="page tpl-map" aria-label="Festival calendar wheel">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-09); color:var(--ch-09);">Chapter 09</span></div>
+    <h1 class="page-headline" style="color:var(--ch-09);">Around the Festival Wheel</h1>
+    <div class="page-body">
+      <p class="instructions">Not every festival is celebrated by every family — celebrations depend on religion, region and community. Here are ten you might come across during the year.</p>
+      <div class="grid-12" style="gap:10px;">
+        <div class="col-4 vocabulary-card"><span class="word">Diwali</span><p class="say">Widely celebrated festival of lights among Hindus, Jains and Sikhs. Oil lamps, rangoli, sweets and fireworks.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Holi</span><p class="say">Spring festival celebrated mainly in northern India with coloured powder, water, music and festive foods.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Eid</span><p class="say">Celebrated by Muslim communities marking the end of Ramadan or a time of sacrifice, with prayers, new clothes and feasting.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Vaisakhi</span><p class="say">Harvest and new-year festival important to Sikh and Punjabi communities, with music, dance and gurdwara visits.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Onam</span><p class="say">Harvest festival celebrated in Kerala with flower rangoli (pookalam), boat races and a grand feast.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Pongal</span><p class="say">Tamil harvest festival giving thanks with a sweet rice dish cooked until it overflows the pot.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Durga Puja</span><p class="say">Major festival in West Bengal and beyond honouring the goddess Durga with elaborate decorated pandals.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Navratri</span><p class="say">Nine nights of dance (garba/dandiya) and devotion celebrated in many regions, especially Gujarat.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Ganesh Chaturthi</span><p class="say">Festival honouring Ganesha, especially popular in Maharashtra, with music, processions and clay idols.</p></div>
+        <div class="col-4 vocabulary-card"><span class="word">Christmas</span><p class="say">Celebrated by Christian communities across India, especially in states like Goa and Kerala, with carols and festive food.</p></div>
+        <div class="col-4"><div class="did-you-know" style="height:100%;"><div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>Remember</div><p>No single family celebrates all of these — that's what makes India's calendar so rich and varied!</p></div></div>
+        <div class="col-4"><div class="illustration-placeholder" style="height:100%; min-height:0;"><span>SUBJECT: A circular "festival wheel" calendar graphic with ten small icons spaced evenly around a ring, one for each festival above.</span></div></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">29</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch9 · p.30 — Festival Explorer real-world activity (Template H) ---------- -->
+<section class="page tpl-journal" aria-label="Festival explorer reflection">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-09); color:var(--ch-09);">Chapter 09</span></div>
+    <h1 class="page-headline" style="color:var(--ch-09);">Festival Explorer</h1>
+    <div class="page-body">
+      <p class="instructions">With your family, attend a cultural festival or celebration near you that welcomes visitors. Afterward, capture what you experienced.</p>
+      <div class="reflection-card">
+        <div class="grid-12">
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What did you see?</span><div class="write-lines"><div class="line"></div></div></div>
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What did you smell?</span><div class="write-lines"><div class="line"></div></div></div>
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What music did you hear?</span><div class="write-lines"><div class="line"></div></div></div>
+          <div class="col-6 stack gap-xs"><span class="tiny-label">What did you learn?</span><div class="write-lines"><div class="line"></div></div></div>
+        </div>
+      </div>
+      <div class="create-it-title"><svg class="motif motif-lg"><use href="#icon-draw"/></svg>Draw Your Favourite Moment</div>
+      <div class="draw-box" style="flex:1;"></div>
+      <div class="parent-note"><svg class="motif motif-lg"><use href="#icon-adult-help"/></svg><p>A grown-up can help you find a family-friendly festival or cultural event nearby.</p></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">30</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 10 — STORIES FROM INDIA
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-10);" aria-label="Chapter 10 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">10</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#icon-read"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Ten · Storytelling</span>
+      </div>
+      <h1>Stories From India</h1>
+      <p class="chapter-invite">"Some stories teach. Some stories explain. All of them are treasured."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: An open storybook with soft light rising from its pages, surrounded by symbolic elements — a peacock feather, a small lotus, a lantern, and gentle scroll-like patterns. STYLE: Flat folk-art illustration, respectful and dignified, no depicted deities in this scene. COLOUR: Indigo, turmeric, cream. NEGATIVE: no text, no cartoon caricature.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">31</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch10 · p.32 — Kinds of stories intro (Template A) ---------- -->
+<section class="page tpl-hero" aria-label="Kinds of stories from India">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-10); color:var(--ch-10);">Chapter 10</span></div>
+    <h1 class="page-headline" style="color:var(--ch-10);">Many Kinds of Stories</h1>
+    <div class="page-body">
+      <p>India's storytelling traditions include several different kinds of stories, and it helps to know the difference: <strong>religious traditions</strong> are sacred beliefs held by a faith community; <strong>mythology</strong> includes traditional sacred narratives passed down over centuries; <strong>folklore</strong> is stories shared within a community or region; <strong>fables</strong> are short tales that teach a lesson, often using animal characters; and <strong>history</strong> is what we know actually happened.</p>
+      <div class="grid-12">
+        <div class="col-6 stack gap-sm">
+          <div class="culture-note"><div class="card-title">Respected Figures</div><p>Figures such as Krishna, Rama, Hanuman, Ganesha and Durga appear in Hindu religious tradition and mythology and are meaningful to many families. We introduce them here with respect, not as cartoon characters.</p></div>
+          <div class="vocabulary-card"><span class="word">Panchatantra</span><p class="say">A classic collection of animal fables, originally written to teach wisdom and clever thinking.</p></div>
+          <div class="vocabulary-card"><span class="word">Jataka Tales</span><p class="say">Stories connected to Buddhist tradition, often describing the Buddha's past lives through animal fables.</p></div>
+        </div>
+        <div class="col-6">
+          <div class="illustration-placeholder" style="height:100%;"><span>SUBJECT: A symbolic, respectful arrangement representing storytelling traditions — an open scroll, a lotus, a small oil lamp, and a peacock feather — without depicting any specific deity. STYLE: Flat folk-art, dignified, gentle. COLOUR: Cream, indigo, turmeric. NEGATIVE: no caricature, no cartoon mascot treatment of sacred figures.</span></div>
+        </div>
+      </div>
+      <div class="explorer-question"><div class="card-title">Curious Mind</div><ul><li>What is the difference between a fable and a true history story?</li><li>Do you have a favourite fable from your own culture?</li></ul></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">32</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch10 · p.33 — Create Your Own Legend (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Create your own legend activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-10); color:var(--ch-10);">Chapter 10</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><span class="label">Challenge</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-10);">Create Your Own Legend</h1>
+    <div class="page-body">
+      <p class="instructions">Pick one option from each box below — or invent your own — to build a brand-new fable that's entirely yours.</p>
+      <div class="grid-12" style="gap:10px;">
+        <div class="col-4 fact-card"><div class="card-title">Hero</div><p>A clever mouse · A brave girl · A sleepy elephant · Your choice</p></div>
+        <div class="col-4 fact-card"><div class="card-title">Animal Companion</div><p>A wise parrot · A mischievous monkey · A patient tortoise · Your choice</p></div>
+        <div class="col-4 fact-card"><div class="card-title">Magical Object</div><p>A glowing lantern · A singing shell · A map that redraws itself · Your choice</p></div>
+        <div class="col-4 fact-card"><div class="card-title">Challenge</div><p>A river that won't stop rising · A riddle guarding a gate · A storm at harvest time · Your choice</p></div>
+        <div class="col-4 fact-card"><div class="card-title">Place</div><p>A mountain village · A busy river port · A quiet desert town · Your choice</p></div>
+        <div class="col-4 fact-card"><div class="card-title">Lesson</div><p>Kindness returns · Patience wins · Cleverness beats size · Your choice</p></div>
+      </div>
+      <div class="draw-box" style="flex:1;"><span class="draw-label">Draw a scene from your legend</span></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">33</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 11 — LIGHTS, CAMERA, INDIA!
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-11);" aria-label="Chapter 11 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">11</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#icon-watch"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Eleven · Cinema</span>
+      </div>
+      <h1>Lights, Camera, India!</h1>
+      <p class="chapter-invite">"Roll the film — this story could be told in a dozen languages."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A vintage-poster-style film reel unspooling into a ribbon of small scenes — a dance, a chase, an animated character, a musician — representing many kinds of storytelling. STYLE: Flat mid-century poster illustration, thick outlines, bold colour blocks. COLOUR: Terracotta, peacock blue, turmeric. NEGATIVE: no real celebrity likeness, no existing film logos or posters, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">34</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch11 · p.35 — Cinema intro (Template A) ---------- -->
+<section class="page tpl-hero" aria-label="Indian cinema introduction">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-11); color:var(--ch-11);">Chapter 11</span></div>
+    <h1 class="page-headline" style="color:var(--ch-11);">More Than One Kind of Movie</h1>
+    <div class="page-body">
+      <p>India makes films in many different languages — including Hindi, Tamil, Telugu, Malayalam, Bengali, Kannada, Marathi, Punjabi and more — each with its own storytelling style, stars and audiences. "Bollywood" is just one part (Hindi-language cinema) of a much bigger picture.</p>
+      <div class="lesson-columns">
+        <div class="stack gap-sm">
+          <div class="fact-card"><div class="card-title">What Goes Into a Film?</div><p>Storytelling, music composition, choreography, costume design, cinematography, and hand-painted or digital poster art all work together.</p></div>
+          <div class="did-you-know"><div class="card-title"><svg class="motif"><use href="#motif-sun"/></svg>Did You Know?</div><p>Indian animated films and studios also produce work in many regional languages, not just one national industry.</p></div>
+        </div>
+        <div class="explorer-question">
+          <div class="card-title">Watch Together</div>
+          <p class="instructions">Watch an age-appropriate Indian film with your family, then answer:</p>
+          <ul><li>Favourite character?</li><li>Favourite scene?</li><li>What did the character learn?</li><li>How would you change the ending?</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">35</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch11 · p.36 — Become a Movie Director poster activity (Template I) ---------- -->
+<section class="page tpl-design" aria-label="Become a movie director poster activity">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-11); color:var(--ch-11);">Chapter 11</span><span class="difficulty"><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif off"><use href="#motif-lotus"/></svg><span class="label">Medium</span></span></div>
+    <h1 class="page-headline" style="color:var(--ch-11);">Become a Movie Director</h1>
+    <div class="page-body">
+      <p class="instructions">Invent your very own film — with entirely original characters — and design its poster below.</p>
+      <div class="grid-12">
+        <div class="col-5 design-fields" style="grid-template-columns:1fr; margin-bottom:0;">
+          <div class="design-field"><span class="field-label">Movie Title</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Hero</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Setting</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Problem</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Song</span><div class="line"></div></div>
+          <div class="design-field"><span class="field-label">Ending</span><div class="line"></div></div>
+        </div>
+        <div class="col-7"><div class="draw-box" style="height:100%; min-height:280px;"><span class="draw-label">Movie poster frame</span></div></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">36</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAPTER 12 — PEOPLE WHO CHANGED THE WORLD  +  HISTORY
+     ============================================================ -->
+<section class="page chapter-opener" style="--chapter-color:var(--ch-12);" aria-label="Chapter 12 opener">
+  <div class="page-inner">
+    <div class="stack gap-md" style="flex:0;">
+      <div style="display:flex; align-items:center; gap:var(--space-md);">
+        <span class="chapter-number">12</span>
+        <span class="chapter-icon-badge"><svg class="motif"><use href="#motif-star"/></svg></span>
+        <span class="chapter-eyebrow eyebrow">Chapter Twelve · People &amp; History</span>
+      </div>
+      <h1>People Who Changed the World</h1>
+      <p class="chapter-invite">"Big ideas often start with one curious person."</p>
+    </div>
+    <div class="chapter-scene">
+      <div class="illustration-placeholder tall" style="height:100%;">
+        <span>SUBJECT: A gentle constellation-style illustration connecting small silhouette portraits of diverse historical figures with starry lines, alongside symbolic objects: a telescope, a musical instrument, a book, a cricket bat. STYLE: Flat folk-art poster illustration, dignified, thick outlines. COLOUR: Indigo night sky, turmeric stars, cream. NEGATIVE: no exact photographic likeness, no text.</span>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">37</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch12 · p.38 — Biography grid (Template B-ish grid) ---------- -->
+<section class="page" aria-label="Biographies of notable Indians">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-12); color:var(--ch-12);">Chapter 12</span></div>
+    <h1 class="page-headline" style="color:var(--ch-12); font-size:20pt;">Six Lives, Six Fields</h1>
+    <div class="page-body" style="gap:10px;">
+      <div class="grid-12" style="gap:10px;">
+        <div class="col-4 card" style="padding:10px 12px;">
+          <div class="illustration-placeholder wide" style="min-height:70px; margin-bottom:6px;"><span style="font-size:8.5pt;">Portrait: C.V. Raman, dignified line-art bust</span></div>
+          <div class="stack" style="gap:1px; margin-bottom:4px;"><span style="font-family:var(--font-display); font-weight:800; font-size:12pt;">C. V. Raman</span><span class="tiny-label" style="color:var(--soft-brown);">Science</span></div>
+          <p style="font-size:10.5pt; line-height:1.4;">A physicist who discovered how light changes when it passes through different materials — now called the Raman effect. He won the Nobel Prize in Physics in 1930, the first Asian scientist to do so in his field.</p>
+        </div>
+        <div class="col-4 card" style="padding:10px 12px;">
+          <div class="illustration-placeholder wide" style="min-height:70px; margin-bottom:6px;"><span style="font-size:8.5pt;">Portrait: Srinivasa Ramanujan, dignified line-art bust</span></div>
+          <div class="stack" style="gap:1px; margin-bottom:4px;"><span style="font-family:var(--font-display); font-weight:800; font-size:12pt;">S. Ramanujan</span><span class="tiny-label" style="color:var(--soft-brown);">Mathematics</span></div>
+          <p style="font-size:10.5pt; line-height:1.4;">A largely self-taught mathematician who produced thousands of original results in number theory before he was 33. Mathematicians are still exploring ideas from his notebooks today.</p>
+        </div>
+        <div class="col-4 card" style="padding:10px 12px;">
+          <div class="illustration-placeholder wide" style="min-height:70px; margin-bottom:6px;"><span style="font-size:8.5pt;">Portrait: Rabindranath Tagore, dignified line-art bust</span></div>
+          <div class="stack" style="gap:1px; margin-bottom:4px;"><span style="font-family:var(--font-display); font-weight:800; font-size:12pt;">R. Tagore</span><span class="tiny-label" style="color:var(--soft-brown);">Literature</span></div>
+          <p style="font-size:10.5pt; line-height:1.4;">A poet, writer and composer who became the first non-European to win the Nobel Prize in Literature, in 1913, for his poetry collection <em>Gitanjali</em>.</p>
+        </div>
+        <div class="col-4 card" style="padding:10px 12px;">
+          <div class="illustration-placeholder wide" style="min-height:70px; margin-bottom:6px;"><span style="font-size:8.5pt;">Portrait: Kalpana Chawla, dignified line-art bust</span></div>
+          <div class="stack" style="gap:1px; margin-bottom:4px;"><span style="font-family:var(--font-display); font-weight:800; font-size:12pt;">Kalpana Chawla</span><span class="tiny-label" style="color:var(--soft-brown);">Space</span></div>
+          <p style="font-size:10.5pt; line-height:1.4;">An aerospace engineer who became the first Indian-born woman to fly in space, serving as a mission specialist on two Space Shuttle missions.</p>
+        </div>
+        <div class="col-4 card" style="padding:10px 12px;">
+          <div class="illustration-placeholder wide" style="min-height:70px; margin-bottom:6px;"><span style="font-size:8.5pt;">Portrait: Sachin Tendulkar, dignified line-art bust</span></div>
+          <div class="stack" style="gap:1px; margin-bottom:4px;"><span style="font-family:var(--font-display); font-weight:800; font-size:12pt;">Sachin Tendulkar</span><span class="tiny-label" style="color:var(--soft-brown);">Sport</span></div>
+          <p style="font-size:10.5pt; line-height:1.4;">A cricketer widely considered one of the greatest batsmen ever, holding the record for the most international centuries scored across a long career.</p>
+        </div>
+        <div class="col-4 card" style="padding:10px 12px;">
+          <div class="illustration-placeholder wide" style="min-height:70px; margin-bottom:6px;"><span style="font-size:8.5pt;">Portrait: Ravi Shankar, dignified line-art bust</span></div>
+          <div class="stack" style="gap:1px; margin-bottom:4px;"><span style="font-family:var(--font-display); font-weight:800; font-size:12pt;">Ravi Shankar</span><span class="tiny-label" style="color:var(--soft-brown);">Music</span></div>
+          <p style="font-size:10.5pt; line-height:1.4;">A sitar virtuoso who brought Indian classical music to audiences worldwide and won multiple Grammy Awards over his long career.</p>
+        </div>
+      </div>
+      <div class="explorer-question"><div class="card-title">Curious Mind</div><p class="instructions">Which person above surprised you the most, and what quality can you learn from them?</p><div class="write-lines"><div class="line"></div></div></div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">38</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch12 · p.39 — When India Was Ruled by Britain (Template A) ---------- -->
+<section class="page tpl-hero" aria-label="History: British colonial rule in India">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-12); color:var(--ch-12);">Chapter 12 · History</span></div>
+    <h1 class="page-headline" style="color:var(--ch-12);">When India Was Ruled by Britain</h1>
+    <div class="page-body">
+      <p>Starting in the 1600s, a British trading company called the <strong>East India Company</strong> began operating in India and slowly gained more control over land and trade. Over time, Britain came to rule large parts of India directly, and Indian people had little say in the decisions that shaped their own country.</p>
+      <p>Colonial rule reorganised land ownership, trade, taxation and industry to benefit Britain, which caused serious hardship for many Indian communities — including famines made worse by policy decisions, and damage to local industries like handloom weaving. This was not simply an exchange between cultures; it was a system of unequal power.</p>
+      <p>People across India resisted colonial rule in many ways — through protest, political organising, boycotts, writing, and mass movements — for well over half a century. India became an independent country in <strong>1947</strong>.</p>
+      <div class="grid-12">
+        <div class="col-6"><div class="illustration-placeholder" style="min-height:150px;"><span>SUBJECT: A symbolic illustration of a ship arriving at a busy Indian port, with trade goods being loaded, hinting at the beginning of the East India Company's presence — historical but not graphic. STYLE: Flat folk-art illustration, muted, educational tone.</span></div></div>
+        <div class="col-6"><div class="culture-note"><div class="card-title">A Note on This Topic</div><p>This is a hard but important part of India's story. It's okay to feel upset learning about unfairness — asking questions about it is exactly what good historians do.</p></div></div>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">39</span></div>
+  </div>
+</section>
+
+<!-- ---------- Ch12 · p.40 — History timeline (Template F) ---------- -->
+<section class="page tpl-timeline" aria-label="Independence movement timeline">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag" style="border-color:var(--ch-12); color:var(--ch-12);">Chapter 12 · History</span></div>
+    <h1 class="page-headline" style="color:var(--ch-12);">The Road to Independence</h1>
+    <div class="page-body">
+      <div class="timeline">
+        <div class="timeline-item"><span class="year">1600s–1850s</span><p>The East India Company expands its trade posts into growing political and territorial control across India.</p></div>
+        <div class="timeline-item"><span class="year">1857</span><p>A major uprising against East India Company rule spreads across northern and central India. Afterward, the British Crown takes over direct rule.</p></div>
+        <div class="timeline-item"><span class="year">Early 1900s</span><p>Organised independence movements grow, with newspapers, political parties and public gatherings calling for self-rule.</p></div>
+        <div class="timeline-item"><span class="year">1920s–1940s</span><p>Large-scale non-cooperation and civil-disobedience movements — including strikes, boycotts and marches — spread across the country, involving millions of people.</p></div>
+        <div class="timeline-item"><span class="year">1947</span><p>India becomes an independent nation.</p></div>
+      </div>
+      <div class="explorer-question">
+        <div class="card-title">Think Like a Historian</div>
+        <ul>
+          <li>Who wrote this source, and what did they know?</li>
+          <li>Whose voice might be missing from this story?</li>
+          <li>How could we learn more?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">40</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CULTURAL EXPLORER CHECKLIST — p.41
+     ============================================================ -->
+<section class="page" data-bg="paper" aria-label="Cultural explorer checklist">
+  <div class="deco-border"></div>
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag">Explorer Checklist</span></div>
+    <h1 class="page-headline" style="color:var(--indigo);">The Cultural Explorer Checklist</h1>
+    <div class="page-body">
+      <p class="instructions">Check off each adventure as you complete it — in any order you like!</p>
+      <div class="grid-12">
+        <ul class="checklist col-6">
+          <li><span class="box"></span>Find India on a map</li>
+          <li><span class="box"></span>Visit an Indian grocery store</li>
+          <li><span class="box"></span>Try an Indian restaurant</li>
+          <li><span class="box"></span>Cook an Indian meal</li>
+          <li><span class="box"></span>Make an Indian dessert</li>
+          <li><span class="box"></span>Watch a documentary about India's wildlife</li>
+        </ul>
+        <ul class="checklist col-6">
+          <li><span class="box"></span>Create Indian-inspired art</li>
+          <li><span class="box"></span>Study an Indian building</li>
+          <li><span class="box"></span>Learn five words from an Indian language</li>
+          <li><span class="box"></span>Attend an Indian cultural festival</li>
+          <li><span class="box"></span>Watch an age-appropriate Indian movie</li>
+          <li><span class="box"></span>Learn about an Indian historical figure</li>
+        </ul>
+      </div>
+      <ul class="checklist"><li><span class="box"></span>Ask someone about a family tradition</li></ul>
+      <div class="reflection-card">
+        <span class="tiny-label">My favourite adventure was</span>
+        <div class="write-lines"><div class="line"></div></div>
+      </div>
+      <div class="rangoli-divider" style="margin-top:auto; color:var(--soft-brown); opacity:0.55;">
+        <svg class="motif"><use href="#motif-lotus"/></svg><svg class="motif"><use href="#motif-sun"/></svg><svg class="motif"><use href="#motif-elephant"/></svg><svg class="motif"><use href="#motif-peacock-feather"/></svg><svg class="motif"><use href="#motif-leaf"/></svg>
+      </div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">41</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MY CULTURE JOURNAL — p.42
+     ============================================================ -->
+<section class="page tpl-journal" aria-label="My culture journal">
+  <div class="page-inner">
+    <div class="page-kicker"><span class="badge-tag">Final Reflection</span></div>
+    <h1 class="page-headline" style="color:var(--terracotta);">My Culture Journal</h1>
+    <div class="page-body">
+      <div class="grid-12" style="gap:14px;">
+        <div class="col-6 reflection-card"><span class="tiny-label">Favourite Food</span><div class="write-lines"><div class="line"></div></div></div>
+        <div class="col-6 reflection-card"><span class="tiny-label">Favourite Animal</span><div class="write-lines"><div class="line"></div></div></div>
+        <div class="col-6 reflection-card"><span class="tiny-label">Favourite Story</span><div class="write-lines"><div class="line"></div></div></div>
+        <div class="col-6 reflection-card"><span class="tiny-label">Favourite Artwork</span><div class="write-lines"><div class="line"></div></div></div>
+        <div class="col-6 reflection-card"><span class="tiny-label">Something That Surprised Me</span><div class="write-lines"><div class="line"></div></div></div>
+        <div class="col-6 reflection-card"><span class="tiny-label">Something I Want to Learn Next</span><div class="write-lines"><div class="line"></div></div></div>
+      </div>
+      <div class="affirmation"><svg class="motif motif-lg"><use href="#motif-lotus"/></svg>Every new word opens another door.</div>
+    </div>
+    <div class="page-footer"><span class="book-title">My Incredible India</span><span class="page-number">42</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATE — p.43
+     ============================================================ -->
+<section class="page certificate" data-bg="paper" aria-label="Cultural explorer certificate">
+  <div class="deco-border"></div>
+  <div class="page-inner">
+    <div class="stack gap-xs center-text" style="align-items:center;">
+      <svg class="motif certificate-seal" style="color:var(--turmeric)"><use href="#motif-sun"/></svg>
+      <p class="eyebrow" style="color:var(--terracotta);">My Incredible India</p>
+      <h1 class="chapter-title" style="color:var(--indigo); font-size:26pt;">Cultural Explorer Certificate</h1>
+    </div>
+    <div class="stack gap-md center-text" style="width:100%; align-items:center;">
+      <p class="story-text quote">This certificate belongs to</p>
+      <div class="write-lines large" style="width:60%;"><div class="line"></div></div>
+      <p style="max-width:5.6in;">You explored India through stories, food, nature, art, history, places, traditions and imagination.</p>
+      <div class="grid-12" style="width:80%;">
+        <div class="col-6 stack gap-xs"><span class="tiny-label">Awarded on</span><div class="write-lines"><div class="line"></div></div></div>
+        <div class="col-6 stack gap-xs"><span class="tiny-label">My favourite discovery</span><div class="write-lines"><div class="line"></div></div></div>
+      </div>
+    </div>
+    <div class="stack gap-sm" style="width:100%; align-items:center;">
+      <span class="tiny-label" style="color:var(--soft-brown);">Badges Collected</span>
+      <div class="icon-row" style="justify-content:center; flex-wrap:wrap;">
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--peacock-blue);"><svg class="motif"><use href="#badge-culture-detective"/></svg></span><span class="patch-name">Culture Detective</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--indigo);"><svg class="motif"><use href="#badge-little-historian"/></svg></span><span class="patch-name">Little Historian</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--terracotta);"><svg class="motif"><use href="#badge-junior-chef"/></svg></span><span class="patch-name">Junior Chef</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--deep-green);"><svg class="motif"><use href="#badge-nature-explorer"/></svg></span><span class="patch-name">Nature Explorer</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--saffron);"><svg class="motif"><use href="#badge-map-master"/></svg></span><span class="patch-name">Map Master</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--lotus-pink);"><svg class="motif"><use href="#badge-festival-explorer"/></svg></span><span class="patch-name">Festival Explorer</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--maroon);"><svg class="motif"><use href="#badge-storyteller"/></svg></span><span class="patch-name">Storyteller</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--soft-brown);"><svg class="motif"><use href="#badge-mini-architect"/></svg></span><span class="patch-name">Mini Architect</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--turmeric);"><svg class="motif"><use href="#badge-young-artist"/></svg></span><span class="patch-name">Young Artist</span></div>
+        <div class="reward-sticker"><span class="patch" style="--patch-color:var(--leaf-green);"><svg class="motif"><use href="#badge-curious-traveller"/></svg></span><span class="patch-name">Curious Traveller</span></div>
+      </div>
+      <div class="grid-12" style="width:80%; margin-top:var(--space-md);">
+        <div class="col-6 stack gap-xs"><div class="write-lines"><div class="line"></div></div><span class="tiny-label center-text">Child's Signature</span></div>
+        <div class="col-6 stack gap-xs"><div class="write-lines"><div class="line"></div></div><span class="tiny-label center-text">Grown-Up's Signature</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BACK COVER
+     ============================================================ -->
+<section class="page cover-page" aria-label="Back cover">
+  <div class="page-inner center-text" style="align-items:center; justify-content:center; gap:var(--space-lg);">
+    <svg class="motif motif-xl" style="color:var(--terracotta);"><use href="#motif-sun"/></svg>
+    <h1 class="chapter-title" style="color:var(--terracotta); font-size:26pt;">The Adventure Doesn't End Here</h1>
+    <p class="story-text" style="font-size:14pt; max-width:5in;">Keep asking questions.<br>Keep tasting.<br>Keep drawing.<br>Keep listening.<br>Keep exploring.</p>
+    <div class="illustration-placeholder wide" style="width:70%;">
+      <span>SUBJECT: An open backpack lying on the ground with a folded map, a pencil, a lotus flower, a small spice jar, binoculars and a notebook spilling out gently. STYLE: Flat folk-art illustration, thick outlines, warm and inviting. COLOUR: Terracotta, cream, leaf green.</span>
+    </div>
+    <p class="tiny-label" style="color:var(--soft-brown);">Activity Book · Ages 6–10</p>
+  </div>
+</section>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

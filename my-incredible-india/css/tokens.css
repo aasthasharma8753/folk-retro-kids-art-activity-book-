@@ -1,0 +1,112 @@
+/* ============================================================
+   TOKENS.CSS
+   Design tokens for "My Incredible India" — the single source of
+   truth for colour, type scale, spacing, radii, shadows and page
+   geometry. Change values here to re-skin or re-size the whole book.
+   ============================================================ */
+
+:root {
+  /* ---------- PAGE GEOMETRY (US Letter portrait) ---------- */
+  --page-width: 8.5in;
+  --page-height: 11in;
+  --page-margin: 0.6in;          /* preferred content margin */
+  --page-margin-min: 0.5in;      /* absolute minimum safe margin */
+  --page-bleed: 0.125in;
+
+  /* Swap these two values (and @page size in print.css) to move to A4:
+     --page-width: 210mm; --page-height: 297mm; */
+
+  /* ---------- COLOUR PALETTE ---------- */
+  --cream: #FFF8E8;
+  --warm-paper: #F7E9CF;
+  --saffron: #E99A32;
+  --turmeric: #E6B936;
+  --terracotta: #C96245;
+  --lotus-pink: #DB7896;
+  --peacock-blue: #267B8C;
+  --indigo: #283A6A;
+  --leaf-green: #6D8D52;
+  --deep-green: #3F6348;
+  --maroon: #773D45;
+  --charcoal: #2D2926;
+  --soft-brown: #715A48;
+  --white: #FFFFFF;
+
+  /* Semantic colour roles */
+  --color-bg-page: var(--cream);
+  --color-bg-panel: var(--warm-paper);
+  --color-text-body: var(--charcoal);
+  --color-text-muted: var(--soft-brown);
+  --color-text-inverse: var(--cream);
+  --color-border: var(--charcoal);
+  --color-accent-1: var(--saffron);
+  --color-accent-2: var(--peacock-blue);
+  --color-accent-3: var(--terracotta);
+  --color-accent-4: var(--lotus-pink);
+  --color-accent-5: var(--leaf-green);
+
+  /* ---------- CHAPTER COLOUR KEYS (identify each chapter at a glance) --- */
+  --ch-01: var(--peacock-blue);
+  --ch-02: var(--deep-green);
+  --ch-03: var(--saffron);
+  --ch-04: var(--terracotta);
+  --ch-05: var(--lotus-pink);
+  --ch-06: var(--soft-brown);
+  --ch-07: var(--maroon);
+  --ch-08: var(--turmeric);
+  --ch-09: var(--indigo);
+  --ch-10: var(--deep-green);
+  --ch-11: var(--peacock-blue);
+  --ch-12: var(--terracotta);
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --font-display: 'Bricolage Grotesque', 'Baloo 2', system-ui, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+  --font-body: 'Nunito Sans', 'Segoe UI', sans-serif;
+  --font-hand: 'Kalam', cursive;
+
+  --fs-cover-title: 52pt;
+  --fs-chapter-title: 32pt;
+  --fs-headline: 24pt;
+  --fs-subheading: 18pt;
+  --fs-body: 12.5pt;
+  --fs-instructions: 11.5pt;
+  --fs-caption: 10pt;
+  --fs-tiny: 9pt;
+
+  --lh-body: 1.55;
+  --lh-heading: 1.1;
+
+  /* ---------- SPACING SCALE ---------- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+
+  --col-gap: 20px;
+
+  /* ---------- RADII ---------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* ---------- BORDERS & OUTLINES ---------- */
+  --line-thin: 1.5px solid var(--charcoal);
+  --line-regular: 2.5px solid var(--charcoal);
+  --line-bold: 3.5px solid var(--charcoal);
+  --outline: var(--line-regular);
+  --dash-draw: 2.5px dashed var(--soft-brown);
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-page: 0 12px 32px rgba(45, 41, 38, 0.22);
+  --shadow-card: 0 4px 0 rgba(45, 41, 38, 0.9);
+  --shadow-lift: 0 6px 14px rgba(45, 41, 38, 0.16);
+
+  /* ---------- Z-INDEX ---------- */
+  --z-motif: 0;
+  --z-content: 1;
+  --z-chrome: 2;
+}

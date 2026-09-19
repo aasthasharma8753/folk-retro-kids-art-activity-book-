@@ -1,0 +1,534 @@
+/* ============================================================
+   COMPONENTS.CSS — reusable editorial + activity components
+   Every component below is used across many chapters so the book
+   reads as one designed system rather than disconnected worksheets.
+   ============================================================ */
+
+/* ---------- MOTIF ICONS (SVG sprite) ---------- */
+.motif {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  stroke: none;
+  display: inline-block;
+}
+.motif-lg { width: 48px; height: 48px; }
+.motif-xl { width: 96px; height: 96px; }
+
+.motif-scatter { position: absolute; opacity: 0.9; z-index: var(--z-motif); pointer-events: none; }
+
+/* ---------- CHAPTER NUMBER ---------- */
+.chapter-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-pill);
+  border: var(--line-bold);
+  background: var(--white);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22pt;
+  color: var(--chapter-color, var(--charcoal));
+}
+
+/* ---------- BADGE (chapter tag / eyebrow pill) ---------- */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  border: var(--line-thin);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: var(--fs-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- SCOUT-PATCH REWARD BADGES ---------- */
+.reward-sticker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  width: 108px;
+  text-align: center;
+}
+.reward-sticker .patch {
+  width: 92px;
+  height: 92px;
+  border-radius: var(--radius-pill);
+  border: 3.5px solid var(--charcoal);
+  outline: 2px dashed var(--white);
+  outline-offset: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--patch-color, var(--saffron));
+  color: var(--white);
+  box-shadow: var(--shadow-lift);
+}
+.reward-sticker .patch .motif { width: 42px; height: 42px; }
+.reward-sticker .patch-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 9.5pt;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+/* ---------- CARDS: shared base ---------- */
+.card {
+  border-radius: var(--radius-md);
+  border: var(--line-regular);
+  background: var(--white);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: var(--shadow-card);
+}
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--space-sm);
+}
+.card-title .motif { color: inherit; }
+
+/* ---------- DID YOU KNOW ---------- */
+.did-you-know {
+  border-radius: var(--radius-md);
+  border: var(--line-regular);
+  background: var(--warm-paper);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+.did-you-know .card-title { color: var(--maroon); }
+.did-you-know p { font-size: var(--fs-instructions); }
+
+/* ---------- FACT CARD (general knowledge nugget) ---------- */
+.fact-card {
+  border-radius: var(--radius-md);
+  border: var(--line-regular);
+  background: var(--cream);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-card);
+}
+.fact-card .card-title { color: var(--peacock-blue); font-size: 11.5pt; }
+
+/* ---------- CURIOUS MIND / EXPLORER QUESTION ---------- */
+.explorer-question {
+  border-radius: var(--radius-md);
+  border: 3px solid var(--peacock-blue);
+  background: var(--white);
+  padding: var(--space-md) var(--space-lg);
+}
+.explorer-question .card-title { color: var(--peacock-blue); }
+.explorer-question ul { display: flex; flex-direction: column; gap: var(--space-xs); }
+.explorer-question li {
+  padding-left: 22px;
+  position: relative;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+.explorer-question li::before {
+  content: '?';
+  position: absolute;
+  left: 0;
+  color: var(--peacock-blue);
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+/* ---------- PARENT / GROWN-UP NOTE ---------- */
+.parent-note {
+  border-radius: var(--radius-md);
+  border: var(--dash-draw);
+  background: transparent;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+.parent-note .motif { flex-shrink: 0; color: var(--soft-brown); margin-top: 3px; }
+.parent-note p { font-family: var(--font-hand); font-size: 13pt; color: var(--soft-brown); }
+
+/* ---------- CREATE IT / DRAW BOX ---------- */
+.draw-box {
+  border-radius: var(--radius-md);
+  border: var(--dash-draw);
+  background: var(--white);
+  min-height: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.draw-box .draw-label {
+  position: absolute;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  font-family: var(--font-hand);
+  color: var(--soft-brown);
+  font-size: 12pt;
+}
+.create-it-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--terracotta);
+  font-size: 14pt;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* ---------- WRITE LINES ---------- */
+.write-lines { display: flex; flex-direction: column; gap: 22px; margin-top: var(--space-sm); }
+.write-lines .line { border-bottom: 1.5px dotted var(--soft-brown); height: 1px; }
+.write-lines.large { gap: 30px; }
+.write-lines.large .line { border-bottom-width: 2px; }
+
+/* ---------- ACTIVITY CARD ---------- */
+.activity-card {
+  border-radius: var(--radius-lg);
+  border: var(--line-regular);
+  background: var(--white);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+}
+.activity-card .card-title { font-size: 16pt; }
+
+/* ---------- CHECKLIST ---------- */
+.checklist { display: flex; flex-direction: column; gap: var(--space-sm); }
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-instructions);
+}
+.checklist .box {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 2.5px solid var(--charcoal);
+  flex-shrink: 0;
+  background: var(--white);
+}
+
+/* ---------- MATCHING GRID ---------- */
+.matching-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-md) var(--space-lg);
+  align-items: center;
+}
+.matching-grid .match-item {
+  border-radius: var(--radius-sm);
+  border: var(--line-thin);
+  background: var(--white);
+  padding: var(--space-sm) var(--space-md);
+  font-weight: 700;
+  text-align: center;
+}
+.matching-grid .match-dots { display: flex; flex-direction: column; align-items: center; gap: 34px; }
+.matching-grid .match-dots .dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--soft-brown); }
+
+/* ---------- MAP CARD ---------- */
+.map-card {
+  border-radius: var(--radius-md);
+  border: var(--line-regular);
+  background: #EAF3EE;
+  padding: var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+.map-card .map-frame {
+  border-radius: var(--radius-sm);
+  border: 2px dashed var(--deep-green);
+  background: var(--white);
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- RECIPE CARD ---------- */
+.recipe-card {
+  border-radius: var(--radius-md);
+  border: var(--line-regular);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-lg);
+}
+.recipe-card .recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+  border-bottom: var(--line-thin);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+.recipe-card h3 { font-size: 18pt; color: var(--terracotta); }
+.recipe-meta { display: flex; gap: var(--space-md); flex-wrap: wrap; }
+.recipe-meta .meta-chip {
+  font-size: var(--fs-tiny);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--soft-brown);
+}
+.recipe-body { display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-lg); }
+.recipe-ingredients ul { display: flex; flex-direction: column; gap: var(--space-xs); }
+.recipe-ingredients li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-weight: 600;
+  font-size: var(--fs-instructions);
+}
+.recipe-ingredients .ing-icon {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--warm-paper);
+  border: 1.5px solid var(--charcoal);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.recipe-steps { counter-reset: step; display: flex; flex-direction: column; gap: var(--space-sm); }
+.recipe-steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 38px;
+  font-size: var(--fs-instructions);
+  font-weight: 600;
+}
+.recipe-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0; top: -2px;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11pt;
+}
+.adult-help {
+  margin-top: var(--space-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--maroon);
+  color: var(--white);
+  font-weight: 800;
+  font-size: var(--fs-tiny);
+  text-transform: uppercase;
+}
+
+/* ---------- TIMELINE ---------- */
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 9px; top: 4px; bottom: 4px;
+  width: 3px;
+  background: var(--indigo);
+  border-radius: 2px;
+}
+.timeline-item { position: relative; padding-bottom: var(--space-lg); }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px; top: 3px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--indigo);
+}
+.timeline-item .year {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--indigo);
+  font-size: 13pt;
+}
+.timeline-item p { margin-top: 2px; }
+
+/* ---------- VOCABULARY CARD ---------- */
+.vocabulary-card {
+  border-radius: var(--radius-sm);
+  border: var(--line-thin);
+  background: var(--white);
+  padding: var(--space-sm) var(--space-md);
+}
+.vocabulary-card .word {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13pt;
+  color: var(--terracotta);
+}
+.vocabulary-card .say {
+  font-family: var(--font-hand);
+  font-size: 11.5pt;
+  color: var(--soft-brown);
+}
+
+/* ---------- CULTURE NOTE ---------- */
+.culture-note {
+  border-left: 5px solid var(--lotus-pink);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--white);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.culture-note .card-title { color: var(--lotus-pink); font-size: 11.5pt; }
+
+/* ---------- REFLECTION CARD ---------- */
+.reflection-card {
+  border-radius: var(--radius-md);
+  border: var(--line-regular);
+  background: var(--warm-paper);
+  padding: var(--space-lg);
+}
+.reflection-card .card-title { color: var(--deep-green); }
+
+/* ---------- PAGE NUMBER / FOOTER ---------- */
+.page-footer {
+  position: absolute;
+  bottom: 0.35in;
+  left: var(--page-margin);
+  right: var(--page-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--soft-brown);
+  font-size: var(--fs-tiny);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.page-footer .book-title { text-transform: uppercase; }
+.page-number { text-align: right; }
+
+/* ---------- DIFFICULTY LOTUS RATING ---------- */
+.difficulty { display: inline-flex; align-items: center; gap: 4px; }
+.difficulty .motif { width: 16px; height: 16px; color: var(--lotus-pink); }
+.difficulty .motif.off { color: #E7D9C2; }
+.difficulty .label { font-size: var(--fs-tiny); font-weight: 700; text-transform: uppercase; margin-left: 4px; color: var(--soft-brown); }
+
+/* ---------- MINI ICON ROW (look/read/draw/etc.) ---------- */
+.icon-row { display: flex; flex-wrap: wrap; gap: var(--space-md); }
+.icon-chip { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 68px; text-align: center; }
+.icon-chip .icon-circle {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 2.5px solid var(--charcoal);
+  background: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--icon-color, var(--terracotta));
+}
+.icon-chip .icon-circle .motif { width: 24px; height: 24px; }
+.icon-chip span { font-size: 8.5pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.03em; }
+
+/* ---------- AFFIRMATION STRIP ---------- */
+.affirmation {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-hand);
+  font-size: 13.5pt;
+  color: var(--indigo);
+  border-top: 2px dotted var(--soft-brown);
+  padding-top: var(--space-sm);
+}
+.affirmation .motif { color: var(--turmeric); flex-shrink: 0; }
+
+/* ---------- ILLUSTRATION PLACEHOLDER ---------- */
+.illustration-placeholder {
+  border-radius: var(--radius-md);
+  border: 2.5px dashed var(--soft-brown);
+  background: repeating-linear-gradient(135deg, rgba(113,90,72,0.06) 0 10px, transparent 10px 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  min-height: 180px;
+  text-align: center;
+}
+.illustration-placeholder span {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 10.5pt;
+  color: var(--soft-brown);
+  max-width: 42ch;
+  line-height: 1.5;
+}
+.illustration-placeholder.tall { min-height: 320px; }
+.illustration-placeholder.wide { min-height: 140px; }
+
+/* ---------- MASCOTS ---------- */
+.mascot { position: absolute; width: 92px; z-index: var(--z-content); }
+.mascot.small { width: 64px; }
+.mascot-caption {
+  font-family: var(--font-hand);
+  font-size: 11.5pt;
+  color: var(--indigo);
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* ---------- FIND-THE-PARAKEET GAME MARK ---------- */
+.find-parakeet {
+  position: absolute;
+  width: 30px;
+  color: var(--leaf-green);
+  opacity: 0.95;
+}
+
+/* ---------- DECORATIVE ARCH FRAME ---------- */
+.arch-frame {
+  border: 4px solid var(--charcoal);
+  border-radius: 220px 220px var(--radius-md) var(--radius-md);
+  padding: var(--space-lg);
+}
+
+/* ---------- RANGOLI DIVIDER ---------- */
+.rangoli-divider { display: flex; justify-content: center; gap: var(--space-sm); margin: var(--space-md) 0; color: var(--terracotta); }
+.rangoli-divider .motif { width: 20px; height: 20px; }
+
+/* ---------- BUTTONS (screen-only navigation, hidden in print) ---------- */
+.screen-toolbar {
+  position: fixed;
+  top: var(--space-md);
+  right: var(--space-md);
+  z-index: 100;
+  display: flex;
+  gap: var(--space-sm);
+}
+.screen-toolbar button {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--charcoal);
+  background: var(--white);
+  cursor: pointer;
+  box-shadow: var(--shadow-lift);
+}
+.screen-toolbar button:hover { background: var(--turmeric); }
