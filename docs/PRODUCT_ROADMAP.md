@@ -31,6 +31,7 @@ These are engineering/test targets to hand Intertek and SGS (`docs/RESOURCES.md`
 1. **Deboss trial:** run a test sheet of 400gsm cotton pulp through blind debossing at 2–3 candidate channel depths; test with an actual toddler hand/crayon for guidance efficacy and check for paper cracking at accordion fold lines. Starting dieline hypothesis to bring to the vendor: a 10-panel accordion, 210mm × 280mm closed, ~2107mm open span (8 interior panels at 210mm + 2 terminal panels at 213.5mm — the arithmetic checks out, but the paper vendor still needs to confirm a ±0.15mm tolerance and a deep U-profile calligraphy channel are both achievable on cotton pulp without cracking, especially on any panel where a channel sits close to a fold line).
 2. **Scent-ink trial:** source 2–3 microencapsulation vendors; test friction-release reliability and scent longevity against realistic shelf/storage time (a capsule that's inert by the time the book reaches a shelf is a dead feature).
 3. **Cover mechanism prototype:** build a rough Swiss-bound + magnetic fold-back cover mock-up; cycle-test the hinge (target: 500+ open/close cycles per §7 of the creative bible) and confirm the frame window dimension can be locked before scroll panel sizing is finalized.
+4. **Corner-mount gallery backing trial (dimensional lock, `ART_DIRECTION.md` §5):** build Panel 10's corner-mount backing at the starting spec — 210mm × 280mm nominal capture area, 8mm inset capture zone, ~20mm mount legs — and test it against panels torn off by actual toddlers (not adults) across multiple tear attempts; adjust the inset before locking a final tolerance. In the same pass, confirm with the paper vendor whether the accordion's fold-crease line needs a separate perforation tooling pass to tear cleanly on 400gsm cotton pulp, or whether the compression score alone is sufficient.
 
 ## Phase 2 — Character & Scroll Art Production
 
@@ -47,7 +48,7 @@ These are engineering/test targets to hand Intertek and SGS (`docs/RESOURCES.md`
 
 1. Combine one fully finished scroll panel + deboss + scent ink + magnetic shadow-box cover into a single hand-built sample.
 2. Parent-and-toddler test the actual **Post-Dinner Living Frame ritual** end-to-end (§5 of the creative bible) — this is the point where the emotional hook gets validated or falsified with a real family, not a moodboard.
-3. Confirm the perforated panel seats correctly in the frame window on the first try — this dimensional lock is the most fragile part of the whole product and must be verified before any print run commitment.
+3. Confirm a torn panel seats correctly on the corner-mount gallery backing on the first try, using the actual child in the test family to do the tearing — this dimensional lock is the most fragile part of the whole product and must be verified with real tear variance, not a clean adult-cut sample, before any print run commitment.
 
 ## Phase 5 — Commercial Launch Prep
 

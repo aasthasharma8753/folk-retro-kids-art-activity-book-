@@ -59,8 +59,9 @@ Interior: continuous Patachitra accordion scroll, one uninterrupted
 ```
 
 - **Binding:** Swiss/brochure binding — exposed, flexible spine so the book lies fully flat and the interior accordion can extend without spine resistance.
-- **Cover mechanic:** hardback cover has a **magnetic hinge** that lets it fold back 180° behind the block, converting the front cover into a standalone easel/shadow-box frame (see §5 for the ritual this enables).
-- **Interior:** the coloring/tracing surface is one continuous accordion-folded scroll, not bound leaves — a child (or parent) can pull one panel taut to display it in the frame while the rest of the story stays folded away.
+- **Cover mechanic:** hardback cover has a **magnetic hinge** that lets it fold back 180° behind the block, converting the back cover into a standalone easel/gallery backing (see §5 for the ritual this enables).
+- **The gallery backing, specifically:** the scroll's final (10th) panel is a terminal panel, permanently glued by its gluing flange to the inside of the back cover — this is *not* one of the panels that gets torn off. Its printed ornate border frames a blank center zone fitted with **four corner mounts** (photo-corner-style, not a die-cut window — see §5's dimensional lock for why), sized to catch whichever interior panel was just colored that night.
+- **Interior:** the coloring/tracing surface is one continuous accordion-folded scroll, not bound leaves — a child (or parent) can pull one panel taut, tear it free along its perforation, and mount it on the gallery backing while the rest of the story stays folded away.
 
 ---
 
@@ -98,7 +99,14 @@ This is the emotional core of the product — design every physical decision in 
 4. That night's panel goes on display in the frame — on the coffee table, not in a toy bin — replacing the finished-and-forgotten coloring page with a rotating, parent-curated "gallery wall of one."
 5. Next day, a new panel comes forward from the scroll and the previous night's panel is either kept in the frame, swapped to a wall, or archived — a built-in reason to repeat the ritual nightly rather than finish the book once and shelve it.
 
-**Design implication:** the frame's window opening and the scroll's perforated panel size must be dimensionally locked to each other from day one — this is the single most important spec in the whole product, because if the torn panel doesn't seat perfectly in the frame, the entire emotional hook collapses back into "regular activity book."
+**Design implication — resolved (dimensional lock v1, pending Phase 4 real-toddler validation):**
+
+A die-cut window/mat was considered and rejected: it demands a tight, consistent tear from the child doing the tearing, and a toddler's perforation tear can easily wander several millimeters — enough to leave visible gaps or make the panel not sit flush. Instead:
+
+- The gallery backing (Panel 10, see §3) uses **four corner mounts**, not a window, sized to the interior panels' nominal trim of **210mm × 280mm**.
+- Corner-mount capture zone is inset **8mm** from that nominal edge on all sides — i.e., the mounts still catch the panel even if a tear undershoots by up to 8mm on any given edge. Mount legs themselves run generously long (~20mm) so a full-size, well-torn panel still reads as properly framed rather than swallowed by oversized mounts.
+- This 8mm figure is a **starting hypothesis**, not a locked tolerance — Phase 4 of `docs/PRODUCT_ROADMAP.md` needs to validate it against how a real toddler actually tears the perforation, and adjust before any print-run commitment.
+- Open manufacturing question, also flagged in the roadmap: the accordion's fold-crease and the panel's tear-perforation may need to be two different tooling operations on 400gsm cotton pulp — a compression score alone doesn't guarantee a clean tear on a thick, fibrous stock.
 
 ---
 
