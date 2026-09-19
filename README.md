@@ -8,6 +8,7 @@ An ultra-premium, bilingual "living frame" ritual object for toddlers (ages 2–
 - [`docs/PRODUCT_ROADMAP.md`](docs/PRODUCT_ROADMAP.md) — gated build sequence (legal/safety clearance → material R&D → art production → prototype → commercial launch)
 - [`docs/MIDJOURNEY_PROMPTS.md`](docs/MIDJOURNEY_PROMPTS.md) — full Midjourney v6 concept-art prompt library per character
 - [`docs/COMMERCIAL_STRATEGY.md`](docs/COMMERCIAL_STRATEGY.md) — Heirloom / Studio / Discovery tier strategy and sequencing
+- [`docs/RESOURCES.md`](docs/RESOURCES.md) — external formatting, safety-testing, and manufacturing sourcing platforms
 
 ## Project status
 

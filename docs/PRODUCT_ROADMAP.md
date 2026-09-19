@@ -2,6 +2,8 @@
 
 Reference: `docs/ART_DIRECTION.md` for the full creative system this roadmap builds. This is a **gated** roadmap — several early steps are hard legal/safety gates, not optional polish, because the whole v2 concept depends on claims (public-domain characters, child-safe scent ink, a magnet that survives real use) that must be verified before any tooling spend.
 
+See `docs/RESOURCES.md` for the external labs, marketplaces, and formatting platforms referenced by name in the phases below.
+
 ## Phase 0 — Legal & Safety Clearance (blocking, do first)
 
 | Task | Why it's a gate |
